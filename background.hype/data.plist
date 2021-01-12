@@ -378,7 +378,7 @@
 	&lt;style&gt;	.sticky{position : fixed !important;}&lt;/style&gt;
 	</string>
 	<key>lastCheckDate</key>
-	<date>2021-01-12T00:03:28Z</date>
+	<date>2021-01-12T00:10:10Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -610,7 +610,7 @@
 	<key>monotypeProjectID</key>
 	<string>E3EA134A-2A3B-4484-A8D4-66436F0CC5CD-24894-00005650E2E94A71</string>
 	<key>oidCounter</key>
-	<integer>1471</integer>
+	<integer>1472</integer>
 	<key>pageTitle</key>
 	<string>meet nuttapong</string>
 	<key>resourcesInfo</key>
@@ -51031,7 +51031,7 @@
 			<string>594D0EC8-B92D-481B-9F99-30A6960CF5EA-445-0000000D271686F3</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>1471</string>
+				<string>1472</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -65787,7 +65787,7 @@
 							<string>300px</string>
 						</dict>
 					</array>
-					<key>1471</key>
+					<key>1472</key>
 					<array>
 						<dict>
 							<key>identifier</key>
@@ -65803,6 +65803,12 @@
 						</dict>
 						<dict>
 							<key>identifier</key>
+							<string>ExplicitDimensions</string>
+							<key>objectValue</key>
+							<string>YES</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
 							<string>BorderStyleRight</string>
 							<key>objectValue</key>
 							<string>None</string>
@@ -65811,7 +65817,7 @@
 							<key>identifier</key>
 							<string>ScaleY</string>
 							<key>objectValue</key>
-							<string>0.6000000000000001</string>
+							<string>0.8</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -65829,7 +65835,7 @@
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>1039px</string>
+							<string>1069px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -65847,7 +65853,7 @@
 							<key>identifier</key>
 							<string>Height</string>
 							<key>objectValue</key>
-							<string>200px</string>
+							<string>190px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -65859,29 +65865,20 @@
 							<key>identifier</key>
 							<string>IFrameHTML</string>
 							<key>objectValue</key>
-							<string>&lt;!-- BEGIN: Powered by Supercounters.com --&gt;
-&lt;center&gt;&lt;script type="text/javascript" src="//widget.supercounters.com/ssl/vt.js"&gt;&lt;/script&gt;&lt;script type="text/javascript"&gt;var sc_visitor_var = sc_visitor_var || [];sc_vt(1603229,"FFFFFF","cccccc","000000",2)&lt;/script&gt;&lt;br&gt;&lt;noscript&gt;&lt;a href="http://www.supercounters.com/"&gt;free online counter&lt;/a&gt;&lt;/noscript&gt;
-&lt;/center&gt;
-&lt;!-- END: Powered by Supercounters.com --&gt;
-</string>
+							<string>&lt;script src="https://apps.elfsight.com/p/platform.js" defer&gt;&lt;/script&gt;
+&lt;div class="elfsight-app-c6884d97-0ee8-4436-8887-cdc706f8ba28"&gt;&lt;/div&gt;</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>Left</string>
 							<key>objectValue</key>
-							<string>75px</string>
+							<string>110px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
 							<string>ScaleX</string>
 							<key>objectValue</key>
-							<string>0.6000000000000001</string>
-						</dict>
-						<dict>
-							<key>identifier</key>
-							<string>AutoresizingMask</string>
-							<key>objectValue</key>
-							<string>159</string>
+							<string>0.8</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -65893,7 +65890,7 @@
 							<key>identifier</key>
 							<string>Width</string>
 							<key>objectValue</key>
-							<string>300px</string>
+							<string>230px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
