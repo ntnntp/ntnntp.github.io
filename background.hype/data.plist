@@ -376,9 +376,18 @@
 	<key>headHtml</key>
 	<string>	&lt;link href="/favicon.png" rel="icon" type="image/x-icon" /&gt;
 	&lt;style&gt;	.sticky{position : fixed !important;}&lt;/style&gt;
+	&lt;!-- Global site tag (gtag.js) - Google Analytics --&gt;
+&lt;script async src="https://www.googletagmanager.com/gtag/js?id=G-3N1J9R0ZZP"&gt;&lt;/script&gt;
+&lt;script&gt;
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3N1J9R0ZZP');
+&lt;/script&gt;
 	</string>
 	<key>lastCheckDate</key>
-	<date>2021-01-12T00:16:02Z</date>
+	<date>2021-01-12T00:24:15Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -533,7 +542,7 @@
 			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>0</integer>
+		<integer>1</integer>
 		<key>showInspectorView</key>
 		<true/>
 		<key>showResourcesView</key>
