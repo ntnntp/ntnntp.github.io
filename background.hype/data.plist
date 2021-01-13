@@ -512,7 +512,7 @@
   gtag('config', 'G-QYQXETH453');
 &lt;/script&gt;</string>
 	<key>lastCheckDate</key>
-	<date>2021-01-13T10:52:16Z</date>
+	<date>2021-01-13T10:53:31Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
@@ -2551,7 +2551,7 @@
 	<array>
 		<dict>
 			<key>currentSceneOid</key>
-			<string>776</string>
+			<string>931</string>
 			<key>name</key>
 			<string>background</string>
 			<key>oid</key>
@@ -2563,6 +2563,8 @@
 					<dict>
 						<key>timeCursors</key>
 						<dict>
+							<key>831</key>
+							<real>0.0</real>
 							<key>kTimelineDefaultIdentifier</key>
 							<real>0.0</real>
 						</dict>
@@ -2571,10 +2573,6 @@
 					</dict>
 					<key>canvasSize</key>
 					<string>{2714, 2807}</string>
-					<key>currentSymbolElementPath</key>
-					<array>
-						<string>842</string>
-					</array>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -2686,7 +2684,7 @@
 						<integer>380</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{5359, 2569}</string>
+					<string>{5349, 2569}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -2711,7 +2709,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>741</string>
 					<key>scrollViewOffset</key>
-					<string>{439, 0}</string>
+					<string>{432, 0}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2821,7 +2819,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{96, 2505}</string>
+					<string>{104, 2512}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2894,7 +2892,7 @@
 						<integer>60</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{4877, 3248}</string>
+					<string>{5123, 3248}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -2919,7 +2917,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>895</string>
 					<key>scrollViewOffset</key>
-					<string>{95, 2506}</string>
+					<string>{0, 1063}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2983,6 +2981,8 @@
 							<string>vertical</string>
 						</dict>
 					</array>
+					<key>zoomFactor</key>
+					<real>0.5</real>
 				</dict>
 			</array>
 		</dict>
@@ -36565,8 +36565,7 @@
 			<string>454A57BA-86A4-4AA1-824E-F6E7558C7D8D-445-0000286C896076B0</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>797</string>
-				<string>752</string>
+				<string>2051</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -53555,7 +53554,7 @@
 							<key>identifier</key>
 							<string>Display</string>
 							<key>objectValue</key>
-							<string>inline</string>
+							<string>none</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -56032,7 +56031,7 @@
 			<string>454A57BA-86A4-4AA1-824E-F6E7558C7D8D-445-0000286C896076B0</string>
 			<key>selectedObjects</key>
 			<array>
-				<string>842</string>
+				<string>2168</string>
 			</array>
 			<key>symbol</key>
 			<dict>
@@ -72655,7 +72654,7 @@
 							<key>identifier</key>
 							<string>Display</string>
 							<key>objectValue</key>
-							<string>inline</string>
+							<string>none</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -75224,9 +75223,7 @@
 			<key>documentIdentifier</key>
 			<string>454A57BA-86A4-4AA1-824E-F6E7558C7D8D-445-0000286C896076B0</string>
 			<key>selectedObjects</key>
-			<array>
-				<string>837</string>
-			</array>
+			<array/>
 			<key>symbol</key>
 			<dict>
 				<key>addToNewSceneControllers</key>
