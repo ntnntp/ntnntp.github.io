@@ -512,11 +512,11 @@
   gtag('config', 'G-QYQXETH453');
 &lt;/script&gt;</string>
 	<key>lastCheckDate</key>
-	<date>2021-01-13T10:45:00Z</date>
+	<date>2021-01-13T10:52:16Z</date>
 	<key>layout</key>
 	<dict>
 		<key>currentInspectorPane</key>
-		<integer>0</integer>
+		<integer>2</integer>
 		<key>customizableLayout</key>
 		<dict>
 			<key>frame</key>
@@ -582,7 +582,7 @@
 							<array>
 								<dict>
 									<key>frame</key>
-									<string>{{271, 0}, {1378, 325}}</string>
+									<string>{{271, 0}, {1378, 323}}</string>
 									<key>identifier</key>
 									<string>container 50</string>
 									<key>isCustomizableViewContainer</key>
@@ -595,7 +595,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{271, 0}, {1378, 325}}</string>
+											<string>{{271, 0}, {1378, 323}}</string>
 											<key>identifier</key>
 											<string>timelineCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -605,7 +605,7 @@
 								</dict>
 								<dict>
 									<key>frame</key>
-									<string>{{271, 326}, {1378, 574}}</string>
+									<string>{{271, 324}, {1378, 576}}</string>
 									<key>identifier</key>
 									<string>container 49</string>
 									<key>isCustomizableViewContainer</key>
@@ -618,7 +618,7 @@
 									<array>
 										<dict>
 											<key>frame</key>
-											<string>{{271, 326}, {1378, 574}}</string>
+											<string>{{271, 324}, {1378, 576}}</string>
 											<key>identifier</key>
 											<string>sceneEditorCustomizableContainer</string>
 											<key>isCustomizableViewContainer</key>
@@ -667,7 +667,7 @@
 			</dict>
 		</array>
 		<key>selectedTabIndex</key>
-		<integer>1</integer>
+		<integer>0</integer>
 		<key>showInspectorView</key>
 		<true/>
 		<key>showResourcesView</key>
@@ -2551,7 +2551,7 @@
 	<array>
 		<dict>
 			<key>currentSceneOid</key>
-			<string>832</string>
+			<string>776</string>
 			<key>name</key>
 			<string>background</string>
 			<key>oid</key>
@@ -2599,7 +2599,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>798</string>
 					<key>scrollViewOffset</key>
-					<string>{0, 2}</string>
+					<string>{0, 5}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2686,7 +2686,7 @@
 						<integer>380</integer>
 					</dict>
 					<key>canvasSize</key>
-					<string>{5349, 2569}</string>
+					<string>{5359, 2569}</string>
 					<key>hypeScene</key>
 					<dict>
 						<key>backgroundColor</key>
@@ -2711,7 +2711,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>741</string>
 					<key>scrollViewOffset</key>
-					<string>{24, 1}</string>
+					<string>{439, 0}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2821,7 +2821,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>2</string>
 					<key>scrollViewOffset</key>
-					<string>{95, 2505}</string>
+					<string>{96, 2505}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -2919,7 +2919,7 @@
 					<key>rootSymbolControllerOid</key>
 					<string>895</string>
 					<key>scrollViewOffset</key>
-					<string>{94, 2506}</string>
+					<string>{95, 2506}</string>
 					<key>userGuides</key>
 					<array>
 						<dict>
@@ -36564,7 +36564,10 @@
 			<key>documentIdentifier</key>
 			<string>454A57BA-86A4-4AA1-824E-F6E7558C7D8D-445-0000286C896076B0</string>
 			<key>selectedObjects</key>
-			<array/>
+			<array>
+				<string>797</string>
+				<string>752</string>
+			</array>
 			<key>symbol</key>
 			<dict>
 				<key>addToNewSceneControllers</key>
@@ -36794,7 +36797,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>60</string>
+							<string>58</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -37625,7 +37628,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>61</string>
+							<string>59</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -39336,7 +39339,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>62</string>
+							<string>60</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -39417,7 +39420,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>63</string>
+							<string>61</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -39840,7 +39843,7 @@
 							<key>identifier</key>
 							<string>Top</string>
 							<key>objectValue</key>
-							<string>283px</string>
+							<string>310px</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -39853,6 +39856,12 @@
 							<string>PaddingBottom</string>
 							<key>objectValue</key>
 							<string>8px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ScaleY</string>
+							<key>objectValue</key>
+							<string>1.2</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -39889,6 +39898,12 @@
 							<string>Left</string>
 							<key>objectValue</key>
 							<string>-293px</string>
+						</dict>
+						<dict>
+							<key>identifier</key>
+							<string>ScaleX</string>
+							<key>objectValue</key>
+							<string>1.2</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -40461,7 +40476,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>64</string>
+							<string>62</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -40572,7 +40587,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>65</string>
+							<string>63</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -53606,7 +53621,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>66</string>
+							<string>64</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -54993,7 +55008,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>57</string>
+							<string>65</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
@@ -55570,7 +55585,7 @@
 							<key>identifier</key>
 							<string>ZIndex</string>
 							<key>objectValue</key>
-							<string>59</string>
+							<string>66</string>
 						</dict>
 						<dict>
 							<key>identifier</key>
