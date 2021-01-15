@@ -33,11 +33,8 @@
 @media (max-width: 800px) {
   .fullscreen-bg {
     background: url('../../assets/img/poster.png') center center / cover no-repeat;
-  }
-}
-
-@media (max-width: 800px) {
-  .fullscreen-bg {
+    filter: brightness(50%) blur(3px);
+    transform: scale(1.1);
   }
 }
 
