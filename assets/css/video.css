@@ -30,13 +30,15 @@
   }
 }
 
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .fullscreen-bg {
-    background: url('../img/videoframe.jpg') center center / cover no-repeat;
+    background: url('../../assets/img/poster.png') center center / cover no-repeat;
   }
+}
 
+@media (max-width: 767px) {
   .fullscreen-bg__video {
     display: none;
   }
-} */
+}
 
