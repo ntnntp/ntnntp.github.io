@@ -30,13 +30,18 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .fullscreen-bg {
     background: url('../../assets/img/poster.png') center center / cover no-repeat;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+  .fullscreen-bg {
+  }
+}
+
+@media (max-width: 800px) {
   .fullscreen-bg__video {
     display: none;
   }

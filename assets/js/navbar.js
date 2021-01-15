@@ -1,5 +1,5 @@
 $(window).scroll(function(){
-    var sDist = 50;
+    var sDist = 20;
 	$('.navbar').toggleClass('scrolled', $(this).scrollTop() > sDist);
     $('.nav-nuttapong').toggleClass('scrolled', $(this).scrollTop() > sDist);
     $('.nav-link').toggleClass('scrolled', $(this).scrollTop() > sDist);
