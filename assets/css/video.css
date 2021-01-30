@@ -30,17 +30,3 @@
   }
 }
 
-@media (max-width: 800px) {
-  .fullscreen-bg {
-    background: url('../../assets/img/poster.png') center center / cover no-repeat;
-    filter: brightness(50%) blur(3px);
-    transform: scale(1.1);
-  }
-}
-
-@media (max-width: 800px) {
-  .fullscreen-bg__video {
-    display: none;
-  }
-}
-
