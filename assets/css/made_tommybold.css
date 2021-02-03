@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'made_tommybold';
+	src: url(/assets/fonts/made_tommy_bold_personal_use-webfont.woff2) format('woff2'),
+	url(/assets/fonts/made_tommy_bold_personal_use-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
