@@ -37,12 +37,24 @@
 
 @media (max-width: 768px) {
   .port-btn {
-    width: 100%!important;
-    height: 127px!important;
+    height: 135px!important;
     overflow: hidden!important;
     border-radius: 10px!important;
     margin-bottom: 15px!important;
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
   }
+}
+
+@media (max-width: 768px) {
+  .port-thumb {
+    /*height: 127px!important;*/
+    width: 100%!important;
+    border-radius: 10px!important;
+  }
+}
+
+.port-thumb {
+  border-radius: 10px!important;
 }
 
 @media (max-width: 768px) {
@@ -150,7 +162,7 @@
   margin-top: 85px!important;
   margin-left: 2vw!important;
   margin-right: 2vw!important;
-  margin-bottom: 50px!important;
+  margin-bottom: 10px!important;
   padding-top: 5vh!important;
   padding-right: 15px!important;
   padding-left: 15px!important;
@@ -165,7 +177,7 @@
   margin-top: 85px!important;
   margin-left: 2vw!important;
   margin-right: 2vw!important;
-  margin-bottom: 50px!important;
+  margin-bottom: 10px!important;
   padding-top: 5vh!important;
   padding-right: 15px!important;
   padding-left: 15px!important;
@@ -205,5 +217,9 @@
 
 .p-body {
   background: rgb(20,20,20)!important;
+}
+
+.sort-icons:hover {
+  filter: invert(100%)!important;
 }
 

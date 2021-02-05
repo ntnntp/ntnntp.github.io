@@ -116,3 +116,71 @@ a.text-dark:focus, a.text-dark:hover {
   }
 }
 
+.pusher {
+  margin-bottom: 0px!important;
+}
+
+@media screen and (min-height: 700px),(min-width: 1500px) {
+  .mobilecompat {
+    position: fixed!important;
+    right: 0!important;
+    bottom: 0!important;
+    left: 0!important;
+  }
+}
+
+.bottombar {
+  transition: all 1s!important;
+  transition-delay: 1s!important;
+  background: transparent;
+  opacity: 0.5!important;
+  filter: invert(100%)!important;
+}
+
+.bottombar:hover {
+  transition: all 1000ms!important;
+  filter: invert(100%)!important;
+  opacity: 1.0!important;
+  background: linear-gradient(0deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 100%)!important;
+}
+
+.hovergrad {
+  transition: 2000ms!important;
+  background: linear-gradient(0deg, rgb(255,255,255) 0%, rgba(255,255,255,0) 0%)!important;
+}
+
+@media (max-width: 768px) {
+  .bottombar {
+    filter: invert(0%)!important;
+    background: white!important;
+    opacity: 1!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .bottombar:hover {
+    filter: invert(0%)!important;
+    background: white!important;
+    opacity: 1!important;
+  }
+}
+
+.text-navigations:hover {
+  transition: 100ms!important;
+  text-decoration: underline;
+  /*font-weight: 400!important;*/
+}
+
+.hoverglow:hover {
+  transition: 500ms ease-in-out !important;
+  color: white!important;
+  filter: brightness(150%);
+  text-shadow: 0px 0px 30px rgb(255,255,255)!important;
+}
+
+.hoverglow {
+  transition: 500ms ease-in-out !important;
+  color: white!important;
+  text-shadow: 0px 0px 100px rgb(255,255,255)!important;
+}
+
