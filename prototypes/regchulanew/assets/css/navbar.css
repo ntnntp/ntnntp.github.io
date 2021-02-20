@@ -1,0 +1,23 @@
+.navbar {
+  background-color: rgb(222,92,142)!important;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.colap {
+  background: rgba(0,123,255,0)!important;
+  color: rgb(0,0,0)!important;
+  border-width: 0px;
+  font-family: chulacharasnewregular;
+  font-size: 16px;
+  width: 100%;
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.colap:hover {
+  text-decoration: underline;
+}
+
