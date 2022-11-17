@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'made_evolve_sansmedium';
+	src: url(../../assets/fonts/made_evolve_sans_medium_personal_use-webfont.woff2) format('woff2'),
+	url(../../assets/fonts/made_evolve_sans_medium_personal_use-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}

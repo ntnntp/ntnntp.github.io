@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'fc_minimalbold_italic';
+	src: url(../../assets/fonts/fc_minimal_bold_italic-webfont.woff2) format('woff2'),
+	url(../../assets/fonts/fc_minimal_bold_italic-webfont.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: auto;
+}
