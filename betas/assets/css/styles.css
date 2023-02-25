@@ -2,6 +2,10 @@
   /*border: 1px solid rgba(255,0,0,0.2)!important;*/
 }
 
+.xxx {
+  border: 2px solid rgba(255,255,0,1)!important;
+}
+
 @media (max-width: 768px) {
   .cssbody {
     padding-left: 3vw;
@@ -103,7 +107,7 @@
 }
 
 .navbar-brand:focus, .navbar-brand:hover {
-  color: var(--bs-body-bg)!important;
+  color: var(--bw6)!important;
 }
 
 hr {
@@ -121,5 +125,9 @@ hr {
   border-radius: 12px!important;
   border-width: 5px!important;
   border-style: outset!important;
+}
+
+.ani-zoom-fade-in {
+  animation: zoom-fade-in 500ms;
 }
 

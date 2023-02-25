@@ -2,7 +2,7 @@
 if (document.getElementById("topnav") == null) {
 	var offH = document.getElementById("xnav").offsetHeight;
 } else {
-	var offH = document.getElementById("topnav").offsetTop + (document.getElementById("xnav").offsetHeight/2);
+	var offH = document.getElementById("topnav").offsetTop;
 };
 
 window.onresize = function() {
@@ -11,7 +11,7 @@ window.onresize = function() {
 if (document.getElementById("topnav") == null) {
 	var offH = document.getElementById("xnav").offsetHeight;
 } else {
-	var offH = document.getElementById("topnav").offsetTop + (document.getElementById("xnav").offsetHeight/2);
+	var offH = document.getElementById("topnav").offsetTop;
 };
 
 };
@@ -48,63 +48,63 @@ function toTop() {
 
 function toBookmark1() {
 	window.scrollTo({
-		 top: document.getElementById("mark1").offsetTop-(offH),
+		 top: document.getElementById("mark-1").offsetTop-(offH),
 		 behavior: "smooth"
 	});
 }
 
 function toBookmark2() {
 	window.scrollTo({
-		 top: document.getElementById("mark2").offsetTop-(offH*2),
+		 top: document.getElementById("mark-2").offsetTop-(offH*2),
 		 behavior: "smooth"
 	});
 }
 
 function toBookmark3() {
 	window.scrollTo({
-	 top: document.getElementById("mark3").offsetTop-(offH*2),
+	 top: document.getElementById("mark-3").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark4() {
 	window.scrollTo({
-	 top: document.getElementById("mark4").offsetTop-(offH*2),
+	 top: document.getElementById("mark-4").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark5() {
 	window.scrollTo({
-	 top: document.getElementById("mark5").offsetTop-(offH*2),
+	 top: document.getElementById("mark-5").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark6() {
 	window.scrollTo({
-	 top: document.getElementById("mark6").offsetTop-(offH*2),
+	 top: document.getElementById("mark-6").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark7() {
 	window.scrollTo({
-	 top: document.getElementById("mark7").offsetTop-(offH*2),
+	 top: document.getElementById("mark-7").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark8() {
 	window.scrollTo({
-	 top: document.getElementById("mark8").offsetTop-(offH*2),
+	 top: document.getElementById("mark-8").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }
 
 function toBookmark9() {
 	window.scrollTo({
-	 top: document.getElementById("mark9").offsetTop-(offH*2),
+	 top: document.getElementById("mark-9").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
 }

@@ -87,6 +87,12 @@
   }
 }
 
+.xh-clouds {
+  font-family: Inter;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+}
+
 @media (min-width: 769px) {
   .xh3 {
     font-family: Inter;
@@ -211,6 +217,7 @@
     font-size: calc(0.8rem + 0.7vw);
     font-weight: 300;
     letter-spacing: -0.03em;
+    line-height: calc(175% + ((100vw - 100vh)*0.005));
   }
 }
 
@@ -220,15 +227,17 @@
     font-size: calc(0.7rem + 0.6vw);
     font-weight: 300;
     letter-spacing: -0.03em;
+    line-height: calc(175% + ((100vw - 100vh)*0.005));
   }
 }
 
 @media (min-width: 769px) {
   .xp3 {
     font-family: Inter;
-    font-size: calc(0.65rem + 0.5vw);
+    font-size: calc(0.6rem + 0.5vw);
     font-weight: 300;
     letter-spacing: -0.03em;
+    line-height: calc(175% + ((100vw - 100vh)*0.005));
   }
 }
 
@@ -399,16 +408,20 @@
 
 @media (max-width: 768px) {
   .csshero {
-    height: calc(2rem + 0vh)!important;
-    padding-left: 2rem!important;
-    padding-right: 2rem!important;
+    width: 100%;
+    min-height: 160px;
+    padding: 2rem;
+    border-radius: 16px;
+    margin-bottom: calc(1.5rem + 0.5vw);
   }
 }
 
 @media (min-width: 769px) {
   .csshero {
-    height: calc(8rem + 10vw);
-    padding-left: 4em!important;
+    width: 100%;
+    padding: 4em;
+    border-radius: 16px;
+    margin-bottom: calc(4.5rem + 1.5vw);
   }
 }
 
@@ -515,6 +528,7 @@
 
 .gsp-singlehalf {
   margin-bottom: calc(4.5rem + 1.5vw)!important;
+  /*color: red!important;*/
 }
 
 .gsp-double {
@@ -565,6 +579,12 @@
   .mobpad {
     padding-left: 1em!important;
     padding-right: 1em!important;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobvertical {
+    writing-mode: vertical-lr;
   }
 }
 
@@ -643,5 +663,30 @@
 .topnav-display {
   display: block!important;
   color: red!important;
+}
+
+.framed {
+  border: 1px solid;
+  border-color: var(--bw1);
+  border-radius: 12px;
+}
+
+.button-pri {
+  padding-right: 4rem;
+  padding-left: 4rem;
+  border-radius: 99px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.button-modal {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 3rem;
+  padding-left: 1rem;
+  color: var(--bw4);
+  border-radius: 99px;
+  width: 100%;
+  border: 1px solid var(--bw2);
 }
 

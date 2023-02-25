@@ -33,11 +33,11 @@
 }
 
 .navbar-brand:hover {
-  filter: invert(1) saturate(0);
+  /*filter: invert(1) saturate(0);*/
 }
 
 .xn-item {
-  color: var(--bw5);
+  color: var(--bw4)!important;
 }
 
 .xn-item:hover {
