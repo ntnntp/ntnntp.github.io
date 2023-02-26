@@ -8,9 +8,10 @@ function keyup(e) {
   secretInput = document.getElementById('secretInput');
 
   //listens for you to press the ENTER key, at which point your web address will change to the one you have input in the search box
-  if (e.keyCode == 192) {
+  if (e.keyCode == 192 || e.keyCode == 189) {
     $("#fun").toast("show");
-    console.log("hello");
+secretInput.focus();
+    
   }
 
   
