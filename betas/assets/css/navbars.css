@@ -1,39 +1,9 @@
 .navbar {
   background-color: transparent;
-  transition: background-color 250ms;
 }
 
 .navbar.scrolled {
   background-color: rgba(255,255,255,1);
-  transition: background-color 250ms;
-}
-
-.navbar-brand.scrolled {
-  color: #4b4b4b!important;
-  transition: color 400ms;
-}
-
-.nav-link.scrolled {
-  color: #252525!important;
-  transition: color 400ms;
-}
-
-.navbar-toggler {
-  filter: brightness(2000%) contrast(200%) invert(100%);
-  transition: filter 400ms;
-}
-
-.navbar-toggler.scrolled {
-  filter: brightness(0%);
-  transition: filter 400ms;
-}
-
-.x50-override {
-  color: #BFBFBF!important;
-}
-
-.navbar-brand:hover {
-  /*filter: invert(1) saturate(0);*/
 }
 
 .xn-item {

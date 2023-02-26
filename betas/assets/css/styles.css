@@ -93,19 +93,6 @@
   animation: zoom-fade-out 500ms;
 }
 
-.btt {
-  color: black;
-  filter: invert(60%) sepia(0%) saturate(30%) hue-rotate(205deg) brightness(97%) contrast(95%);
-  transition-duration: 250ms;
-}
-
-.btt:hover {
-  color: black;
-  filter: invert(33%) sepia(0%) saturate(1030%) hue-rotate(197deg) brightness(93%) contrast(90%);
-  animation: translate-up 400ms;
-  transition-duration: 250ms;
-}
-
 .navbar-brand:focus, .navbar-brand:hover {
   color: var(--bw6)!important;
 }
@@ -129,5 +116,44 @@ hr {
 
 .ani-zoom-fade-in {
   animation: zoom-fade-in 500ms;
+}
+
+.modal-footer {
+  background: var(--bw0);
+  border-style: solid!important;
+  border-color: var(--bw1)!important;
+  border-width: 1px;
+}
+
+.modal-body {
+  border-style: solid!important;
+  border-color: var(--bw1)!important;
+  background: var(--bw0);
+  border-width: 1px;
+}
+
+.modal-header {
+  background: var(--bw0);
+  border-style: solid!important;
+  border-color: var(--bw1)!important;
+  border-width: 1px;
+}
+
+.modal-title {
+  border-style: none!important;
+  color: var(--bw4);
+}
+
+.modal-subtitle {
+  border-style: none!important;
+  color: var(--bw2)!important;
+}
+
+.modal-ctaclose {
+  background: var(--bw0);
+  border-style: solid!important;
+  border-color: var(--bw1)!important;
+  border-width: 1px;
+  font-weight: 500;
 }
 
