@@ -1,5 +1,6 @@
 * {
   /*border: 1px solid rgba(255,0,0,0.2)!important;*/
+  animation: fade-in 600ms!important;
 }
 
 .xxx {
@@ -155,5 +156,9 @@ hr {
   border-color: var(--bw1)!important;
   border-width: 1px;
   font-weight: 500;
+}
+
+.spinner-border, .spinner-grow {
+  animation: 0.5s linear infinite var(--bs-spinner-animation-name);
 }
 

@@ -6,6 +6,7 @@ var greeter = document.getElementById("greets");
 var greetsMain = document.getElementById("greets-main");
 
 
+
 /*TIME*/
 if (hr >= 0 && hr < 1) {
 	greeter.innerHTML = "🥱 Time for some sleep now. Have a peaceful night!";
@@ -64,3 +65,4 @@ if (month == 0 && ndate <= 4) {
 	greeter.innerHTML = "Happy new year! 🎆 have a wonderful "+day.getFullYear()+"!";
 	greetsMain.innerHTML = "🎆 Happy new year";
 }
+

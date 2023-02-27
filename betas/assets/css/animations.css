@@ -74,6 +74,17 @@
   }
 }
 
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20vh);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
 @keyframes bounce-loop {
   0% {
     transform: translateY(0em);
@@ -128,5 +139,9 @@
   animation-play-state: paused;
   animation-duration: 500ms;
   animation-timing-function: ease-in-out;
+}
+
+.ani-slide-up {
+  animation: slide-up 600ms;
 }
 
