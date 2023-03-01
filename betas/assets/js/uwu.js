@@ -64,6 +64,11 @@ secretInput.focus();
     window.open("https://www.instagram.com/ntnntp", '_blank');
     secretInput.value = "";
   };
+
+  if (secretInput.value == "animeroll") {
+    window.open("https://www.youtube.com/watch?v=sFUmPSyG61c", '_blank');
+    secretInput.value = "";
+  };
     
 
 }
