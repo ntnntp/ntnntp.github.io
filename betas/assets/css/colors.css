@@ -68,12 +68,12 @@
   :root {
     --transparent: rgba(0, 0, 0, 0);
     --bw6: #ffffff;
-    --bw5: #f0f0f0;
-    --bw4: #e0e0e0;
-    --bw3: #d0d0d0;
-    --bw2: #c0c0c0;
+    --bw5: #e9e9e9;
+    --bw4: #cecece;
+    --bw3: #aaaaaa;
+    --bw2: #797979;
     --bw1: #424242;
-    --bw0: #121212;
+    --bw0: #1a1a1a;
     --red-7: rgb(253, 242, 241);
     --red-6: rgb(240, 219, 219);
     --red-5: rgb(209, 171, 170);

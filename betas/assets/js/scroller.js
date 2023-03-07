@@ -44,6 +44,7 @@ function toTop() {
 		 behavior: "smooth"
 	});
 	document.getElementById('btt').classList.add("justHide");
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark1() {
@@ -51,6 +52,7 @@ function toBookmark1() {
 		 top: document.getElementById("mark-1").offsetTop-(offH),
 		 behavior: "smooth"
 	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark2() {
@@ -58,6 +60,7 @@ function toBookmark2() {
 		 top: document.getElementById("mark-2").offsetTop-(offH*2),
 		 behavior: "smooth"
 	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark3() {
@@ -65,48 +68,56 @@ function toBookmark3() {
 	 top: document.getElementById("mark-3").offsetTop-(offH*2),
 	 behavior: "smooth"
 });
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark4() {
 	window.scrollTo({
 	 top: document.getElementById("mark-4").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark5() {
 	window.scrollTo({
 	 top: document.getElementById("mark-5").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark6() {
 	window.scrollTo({
 	 top: document.getElementById("mark-6").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark7() {
 	window.scrollTo({
 	 top: document.getElementById("mark-7").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark8() {
 	window.scrollTo({
 	 top: document.getElementById("mark-8").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
 }
 
 function toBookmark9() {
 	window.scrollTo({
 	 top: document.getElementById("mark-9").offsetTop-(offH*2),
 	 behavior: "smooth"
-});
+	});
+	$('#collapse-mobnav').collapse("hide");
+	
 }
 
 //SUBNAV STYLERS

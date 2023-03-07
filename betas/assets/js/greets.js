@@ -37,7 +37,7 @@ if (hr >= 13 && hr < 16) {
 	greetsMain.innerHTML = "Good afternoon";
 }
 if (hr >= 16 && hr < 18) {
-	greeter.innerHTML = "🍃 How's your day so far.  I bet you had a wonderful day!";
+	greeter.innerHTML = "🍃 How's your day so far.  Wish you a great evening!";
 	greetsMain.innerHTML = "Good evening";
 }
 if (hr >= 18 && hr < 19) {

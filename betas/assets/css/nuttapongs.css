@@ -211,7 +211,7 @@
 @media (min-width: 769px) {
   .xp2 {
     font-family: Inter;
-    font-size: calc(0.7rem + 0.6vw);
+    font-size: calc(0.8rem + 0.4vw);
     font-weight: 300;
     letter-spacing: -0.03em;
     line-height: calc(175% + ((100vw - 100vh)*0.005));
@@ -221,7 +221,7 @@
 @media (min-width: 769px) {
   .xp3 {
     font-family: Inter;
-    font-size: calc(0.6rem + 0.5vw);
+    font-size: calc(0.7rem + 0.3vw);
     font-weight: 300;
     letter-spacing: -0.03em;
     line-height: calc(175% + ((100vw - 100vh)*0.005));
@@ -401,6 +401,7 @@
 
 @media (min-width: 769px) {
   .csshero {
+    margin-top: 2rem;
     width: 100%;
     padding: 4em;
     border-radius: 16px;
@@ -526,7 +527,7 @@
 }
 
 .gsp-line {
-  margin-bottom: calc(1rem + 0.25vw)!important;
+  margin-bottom: calc(1rem + 0.5vw)!important;
 }
 
 .svgicon-15 {

@@ -1,5 +1,8 @@
+* {
+  /*border: 1px solid rgba(0, 0, 0, 0.2)!important;*/
+}
+
 p, img, span, button, row, col, container-fluid {
-  /*border: 1px solid rgba(255,0,0,0.2)!important;*/
   animation: fade-in 600ms!important;
 }
 
@@ -166,5 +169,17 @@ hr {
 
 .modal {
   animation: none!important;
+}
+
+alert {
+  z-index: 0;
+}
+
+body {
+  /*zoom: 97%;*/
+}
+
+.attrib {
+  filter: saturate(0%);
 }
 

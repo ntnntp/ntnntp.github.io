@@ -20,12 +20,24 @@
 </head>
 
 <body class="d-flex d-sm-flex flex-column align-items-center justify-content-sm-center align-items-xl-center cssbody cssnav" style="overflow-x: hidden;">
-    <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex justify-content-center" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;border-style: none;border-bottom: 1px none #f4f4f4;background: var(--bw0);width: 100%;">
+    <div class="d-flex d-lg-none flex-column justify-content-end align-items-end" style="width: 100%;position: fixed;bottom: 0%;left: 0%;z-index: 99;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-mobnav" href="#collapse-mobnav" role="button" style="border-bottom-left-radius: 0;border-top-left-radius: 99px;border-top-right-radius: 99px;border-bottom-right-radius: 0;background: var(--red-3);padding-left: 1rem;padding-right: 1rem;border-style: none;padding-bottom: 1rem;padding-top: 1rem;margin-right: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-fill" style="width: 1rem;height: 1rem;margin-bottom: 3px;">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+            </svg></a>
+        <div class="collapse" id="collapse-mobnav" style="z-index: 99;width: 100%;">
+            <div class="d-flex flex-column" style="overflow: clip;background: var(--bw0);padding: 2rem;width: 100%;border-top-left-radius: 12px;border-top-right-radius: 12px;border-style: none;border-top: 1px solid var(--bw1);padding-bottom: 3rem;">
+                <p class="d-flex justify-content-between gsp-single xp2" style="margin-bottom: 0;color: var(--bw2);">Chapters<button class="gsp-line xp2 medium" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);border-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-up" style="margin-bottom: 3px;overflow: visible;" onclick="toTop()">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"></path>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg></button></p><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark1()">Summary<span class="light" style="color: var(--bw1);" onclick="toBookmark()">01</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark2()">Diving in<span class="light" style="color: var(--bw1);" onclick="toBookmark()">02</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark3()">Redesigning<span class="light" style="color: var(--bw1);" onclick="toBookmark()">03</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark4()">Results<span class="light" style="color: var(--bw1);" onclick="toBookmark()">04</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark5()">Reflections<span class="light" style="color: var(--bw1);">05</span></button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex justify-content-center" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;background: var(--bw0);width: 100%;border-style: none;border-bottom: 1px none #f4f4f4;">
         <div class="container-fluid"><a class="navbar-brand bsstrip logo" id="xlogo" href="../index.html" style="text-align: right;transition: color 400ms;margin-left: -0.8125rem!important;color: var(--bw6);">nuttapong</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;padding: 0px;filter: invert(1%);margin-right: -0.8125rem!important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list" style="color: var(--bw6);width: 1.5rem;height: 1.5rem;">
                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
                 </svg><span class="visually-hidden">Toggle navigation</span></button>
             <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1" style="margin-left: -0.8125rem!important;">
-                <ul class="navbar-nav desknomar" style="color: rgb(143,199,255);padding-top: 1rem;padding-bottom: 1rem;margin-right: -0.8125rem;">
+                <ul class="navbar-nav desknomar" style="color: rgb(143,199,255);padding-bottom: 1rem;margin-right: -0.8125rem;padding-top: 1rem;">
                     <li class="nav-item"><a class="nav-link active xh6 light xn-item" href="../index.html" style="padding-right: 32px;padding-left: 0px;">projects</a></li>
                     <li class="nav-item"><a class="nav-link xh6 light xn-item" href="about.html" style="padding-right: 32px;padding-left: 0px;">about me</a></li>
                     <li class="nav-item"><a class="nav-link xh6 light xn-item" href="https://nuttapongs.com/files/Nuttapong_Srikamdee_UXUI.pdf" style="padding-right: 0px;padding-left: 0px;" target="_blank">get resume</a></li>
@@ -46,7 +58,7 @@
                     <p id="title" class="xh6 light" style="margin: 0px;color: #ffffff;">LINE MAN Wongnai, 2022</p>
                     <p class="d-none d-xl-flex xp3 light ani-fade" style="margin: 0px;width: 70%;margin-top: 1em;color: #ffffff;">Redesign Messenger service in LINE MAN application to both improve user experience and accomodate future functionalities.</p>
                 </div>
-                <div class="col-auto d-flex" style="padding: 0;">
+                <div class="col-auto d-flex mobhide" style="padding: 0;">
                     <div class="d-flex flex-column justify-content-center" style="width: 100%;"><button class="d-flex justify-content-between align-items-center xp3 bw0 medium noul button-pri" style="background: #027565;color: #ffffff;border: 2px solid var(--cyn-3);" rel="external" onclick="toBookmark8()">Try the prototype!</button></div>
                 </div>
             </div>
@@ -73,7 +85,7 @@
                         </div>
                     </div>
                     <div class="row gsp-double" style="margin: 0px;">
-                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-singlehalf" style="padding: 0;"><img class="img-fluid framed gsp-single" src="../assets/img/projects/messenger/rect169.png" loading="eager">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1" style="padding: 0;"><img class="img-fluid framed gsp-single" src="../assets/img/projects/messenger/rect169.png" loading="eager">
                             <p class="xh2 heavy gsp-half" style="margin: 0px;text-align: left;color: var(--bw4);">Lifeless design, now alive</p>
                             <p class="xp2 regular gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">With <strong>outdated</strong> user <strong>interface</strong>, <strong>frustrating</strong> user <strong>experience</strong>, and lacklustre features, the <strong>LINE MAN Messenger</strong> service is in desperate <strong>need</strong> of a <strong>redesign</strong>.&nbsp;</p>
                             <hr class="gsp-double" style="width: 100%;margin-top: 0;background: var(--bw1);">
@@ -81,17 +93,17 @@
                             <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">LINE MAN Messenger is a service within the LINE MAN app that enables users to deliver parcel&nbsp; instantly. At the moment, the service is limited to delivery by motorbike. Compared to other delivery options, LINE MAN Messenger offers relatively affordable prices and also provides delivery insurance that covers up to 3,000 THB.</p>
                             <p class="xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;">Scope of the project</p>
                             <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">This project is aimed to do the "initial redesign" of the LINE MAN Messenger user interface and user experience.&nbsp;While many pages of the service will be updated to new appearances, no new features will be added.&nbsp;The team may discuss new features but likely won't implement them yet as those features will be added in later phases (outside the scope of this project).</p>
-                            <p class="d-flex flex-column justify-content-start align-items-start flex-md-row justify-content-md-between align-items-md-center xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;gap: 0.25rem;">Project status<span class="xp3 medium" style="color: var(--cyn-4);">In production&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cloud-fill" style="margin-left: 6px;">
+                            <p class="d-flex flex-column justify-content-start align-items-start flex-md-row justify-content-md-between align-items-md-center xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;gap: 0.25rem;">Project status<span class="xp3 medium" style="color: var(--bw1);">In production&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cloud-fill" style="margin-left: 6px;">
                                         <path d="M4.406 3.342A5.53 5.53 0 0 1 8 2c2.69 0 4.923 2 5.166 4.579C14.758 6.804 16 8.137 16 9.773 16 11.569 14.502 13 12.687 13H3.781C1.708 13 0 11.366 0 9.318c0-1.763 1.266-3.223 2.942-3.593.143-.863.698-1.723 1.464-2.383z"></path>
                                     </svg></span></p>
                             <p class="xp2 light gsp-singlehalf" style="margin: 0px;text-align: justify;color: var(--bw4);">The redesign was finished in July 2022 and passed to senior team members for further review and refinement. Currently, the updated design was integrated into the LINE MAN app version 12.0.0, which was released in September 2022.&nbsp;</p>
-                            <div class="row d-flex flex-column flex-lg-row gsp-single" style="margin: 0;width: 100%;gap: 2rem;">
-                                <div class="col-7" style="padding: 0;">
+                            <div class="row d-flex flex-column flex-lg-row" style="margin: 0;width: 100%;gap: 2rem;">
+                                <div class="col-12 col-lg-7" style="padding: 0;">
                                     <p class="gsp-single xh3" style="margin: 0px;color: var(--bw4);">Okay. What's the situation?</p>
                                     <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">LINE MAN Messenger is a service that has not been updated since its launch, unlike other LINE services like LINE MAN Food and Mart that have undergone significant improvements over the years. As a result, LINE MAN Messenger users have been experiencing poor user experience and unexciting user interfaces, which made them switch to competitor apps instead.</p>
                                 </div>
-                                <div class="col" style="padding: 0;">
-                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Screenshot_2022.11.03_16.47.07.929.png&quot;);background-size: cover;margin-bottom: 0;"></p>
+                                <div class="col d-none d-lg-block" style="padding: 0;">
+                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Screenshot_2022.11.03_16.47.07.929.png&quot;) 50% 8% / cover;margin-bottom: 0;min-height: 400px;"></p>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +187,7 @@
                             <p class="xp2 bw3 light gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);">In short, this is what our new redesign mainly need:<br></p>
                         </div>
                     </div>
-                    <div class="row gsp-double" style="margin: -1rem;margin-bottom: 3rem;">
+                    <div class="row gsp-double" style="margin: -1rem;">
                         <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
                             <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start" style="background: var(--cyn-1);border-radius: 12px;padding: 2rem;width: 100%;height: 100%;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--cyn-6);">Just… fast.<br></span><span class="xp3 light cyn5 x75" style="text-align: justify;color: var(--cyn-6);">Fast doesn’t only mean the loading times need to be minimal. In fact, the “fast” here is actually in terms of usability. We need to take our users to their goal as fast and smooth as possible.</span></div>
                         </div>
@@ -198,38 +210,38 @@
                     </div>
                     <div class="row gsp-double" style="margin: 0px;margin-bottom: 0;">
                         <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-center align-items-sm-start justify-content-lg-center justify-content-xl-start justify-content-xxl-center align-items-xxl-start ani1" style="overflow: clip;padding: 0;">
-                            <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
+                            <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;gap: 0.25rem;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Prioritising things</p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">UI Redesign</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">UI Redesign</p>
                             </div>
                             <p class="xp2 gsp-single light" style="margin: 0px;text-align: justify;color: var(--bw3);">In a delivery app like LINE MAN Messenger, the most important aspect is addresses. To ensure a smooth user experience, the sender and recipient location fields should be emphasized on relevant screens. However, in the current design, these location buttons are styled similarly to the "Share delivery status via LINE" button.</p><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%2020009.png" style="border-radius: 12px;width: 100%;border: 1px solid var(--bw1);">
                             <p class="xp2 gsp-double light" style="margin: 0px;text-align: justify;color: var(--bw3);">To improve the user experience in a delivery app like LINE MAN Messenger, the visual emphasis should be placed on the sender and recipient fields. Differentiating the element style can highlight their importance. To better visualise the delivery process, these fields could be connected with dotted lines or merged into one element with two inputs. Icons can also be used to provide visual aid, while important elements such as the location selector should include explicit instructions to guide the user.</p>
                             <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Reunite with other services</p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">UI Redesign</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">UI Redesign</p>
                             </div><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%20200092.png" style="border-radius: 12px;width: 100%;border: 1px solid var(--bw1);">
                             <p class="xp2 gsp-double light" style="margin: 0px;text-align: justify;color: var(--bw3);">As a sub-service in the LINE MAN app, it's important for Messenger to align its interface design with other services such as LINE MAN Food or Mart for a cohesive user experience. Fortunately, LINE MAN has its own improved design systems, so implementation is the only remaining step.</p>
                             <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Spaces for marketing</p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">UI Redesign</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">UI Redesign</p>
                             </div><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%20200093.png" style="border-radius: 12px;width: 100%;border: 1px solid var(--bw1);">
                             <p class="xp2 gsp-double light" style="margin: 0px;text-align: justify;color: var(--bw3);">Finally, Messenger currently only displays advertisements through pop-up notifications from Leanplum. To inform users about packages and promotions, graphical banners should also be added to the main Messenger interface. These can be placed in the header, after key elements, or on the confirmation page as a final promotion call. However, the banners should not be too distracting or intrusive. The priority of the redesign is to improve usability and satisfy users, who value better products over promotions and discounts.</p>
                             <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Help users do things</p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">UX Optimisation</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">UX Optimisation</p>
                             </div>
                             <p class="xp2 gsp-single light" style="margin: 0px;text-align: justify;color: var(--bw3);">The key elements of a Messenger delivery app are inputting addresses, adding options, reviewing orders, and tracking delivery progress. To ensure speed, the app should default to the last used location for senders, allowing them to simply select the recipient location and move on.</p><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%2020010.png" style="border-radius: 12px;width: 100%;border: 1px solid var(--bw1);">
                             <p class="xp2 gsp-double light" style="margin: 0px;text-align: justify;color: var(--bw3);">Next, users will be automatically taken to the next screen.&nbsp; They can now see an estimate of the delivery cost with different options to choose from like round trips and vehicle types. And in the future, users will have the added benefits of extra insurance and faster delivery options. Now, they have successfully obtained a quote for their delivery!<br><br>In the next step of the ordering process, users will enter essential delivery information, such as delivery location and selected extras. Messenger will then provide a summary of the inputted information for review. Once all information is confirmed and payment is selected, the ordering process is complete. Users can then track the rider's location and await their delivery.<br><br>In the delivery tracking screen, they will be able to share delivery progress via unique URL. As this feature is the second priority of this project, it will be explained later on.</p>
                             <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Improved location pinning</p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">Future improvements</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">Future improvements</p>
                             </div>
                             <p class="xp2 gsp-single light" style="margin: 0px;text-align: justify;color: var(--bw3);">Well, currently&nbsp;<strong>pinning accurate location is... painful&nbsp;</strong><em>(pun intended)</em><br><br>Yes, pinning location is easy; but making it error-free is just cumbersome. To enable users more fluid experience, we will need some solutions for this challenge.<br></p><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%2020673.png" style="border-radius: 12px;width: 100%;" width="1607" height="873">
                             <p class="xp2 gsp-single light" style="margin: 0px;text-align: justify;color: var(--bw3);">The "get address by phone number" feature streamlines the delivery process by allowing users to enter recipient's (or sender's) mobile phone number instead of manually entering their address. However, it's important to consider privacy concerns, as users may have multiple saved addresses in their address book and there may be potential for misuse if safeguards are not in place.<br><br>To address that, we will need to make a request from another users. The user receiving the delivery will receive a notification on their phone to verify and select their saved address or add a new one. Once verified, the order creator will receive a notification. For Messenger users without the LINE MAN app, a unique webpage can be used to confirm their preferred location. The order creator will be notified once confirmed.</p><img class="img-fluid gsp-single" src="../assets/img/projects/messenger/Frame%2020012.png" style="border-radius: 12px;width: 100%;border: 1px solid var(--bw1);" width="1607" height="873">
                             <p class="xp2 gsp-double light" style="margin: 0px;text-align: justify;color: var(--bw3);">The LINE MAN app should provide&nbsp;&nbsp;suggestion to users in “Select delivery location” page and&nbsp;let users input location URLs from Apple Maps or Google Maps for added convenience. However, due to development limitations and potential iOS 16 clipboard permission prompts, users may need to manually paste location URLs instead of typing in addresses to find their destination.</p>
                             <div class="d-flex flex-column justify-content-center align-items-start flex-lg-row justify-content-lg-between align-items-lg-center align-items-xxl-center gsp-single" style="width: 100%;">
                                 <p class="xh3" style="margin: 0px;color: var(--bw4);">Sharing delivery status<br></p>
-                                <p class="xh5 light" style="margin: 0px;color: var(--bw1);">Future improvements</p>
+                                <p class="xh5 light" style="margin: 0px;color: var(--bw2);">Future improvements</p>
                             </div>
                             <div class="row d-flex flex-xxl-row-reverse">
                                 <div class="col-12 col-xxl-6 d-flex flex-row justify-content-center align-items-start align-items-sm-start flex-lg-row justify-content-lg-start align-items-xxl-center gsp-single"><img src="../assets/img/projects/messenger/Frame%2020088.png" style="border-radius: 12px;width: 100%;height: auto;border: 1px solid var(--bw1);"></div>
@@ -250,13 +262,14 @@
                     </div>
                     <div class="row g-0 photos" data-bss-baguettebox="">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 gsp-double" style="padding: 0;">
-                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw4);">Prototype</p><iframe id="mark-8" class="gsp-single framed" width="100%" height="860" style="background-color: black;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcNXoJkzh0D3DdPbcGpGdAz%2FLINE-MAN-Messenger-Redesign%3Fpage-id%3D22%253A28351%26node-id%3D22%253A28472%26scaling%3Dcontain%26starting-point-node-id%3D22%253A28472%26hide-ui%3D1" allowfullscreen></iframe><a class="medium gsp-single" href="https://www.figma.com/proto/cNXoJkzh0D3DdPbcGpGdAz/LINE-MAN-Messenger-Redesign?page-id=22%3A28351&amp;node-id=22%3A28472&amp;scaling=contain&amp;starting-point-node-id=22%3A28472&amp;hide-ui=1" style="color: var(--bw5);display: block;" target="_blank">Alternatively,&nbsp;click here&nbsp;to view the prototype in Figma</a>
-                            <p class="xh3 gsp-single" style="margin: 0px;color: var(--bw4);">User flow</p><iframe id="mark-8" class="gsp-single framed" width="100%" height="860" style="background-color: black;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7oYg4rdtZyQf4kWRRFnRA2%2FLOCAL-%257C-%255BLM%255D-Messenger-Revamp%3Fnode-id%3D8123%253A81766%26t%3DFjNWXNspoSPuVzyJ-1" allowfullscreen></iframe><a class="medium gsp-single" href="https://www.figma.com/file/7oYg4rdtZyQf4kWRRFnRA2/LOCAL-%7C-%5BLM%5D-Messenger-Revamp?node-id=7938%3A72992&amp;t=GJNt41RpmJbYfZcm-1" style="color: var(--bw5);display: block;" target="_blank">Alternatively,&nbsp;click here&nbsp;to view the prototype in Figma</a>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw4);">Prototype</p>
+                            <div class="d-lg-none gsp-single" style="padding: 2rem;color: var(--ylw-6);background: var(--ylw-1);border-radius: 12px;"><span class="xh6">Resource prevented from loading</span><span class="xp4"><br><br>To mobile viewers, this file is very resource-intensive and will crash this webpage if loaded, so the embedded Figma file has been prevented from rendering. Please enlarge the browser window if you're on desktop, but if you really wanted to do it in mobile...<br><br></span><a class="medium gsp-halfhalf" href="https://www.figma.com/proto/cNXoJkzh0D3DdPbcGpGdAz/LINE-MAN-Messenger-Redesign?page-id=22%3A28351&amp;node-id=22%3A28472&amp;scaling=contain&amp;starting-point-node-id=22%3A28472&amp;hide-ui=1" style="display: block;color: var(--ylw-6);" target="_blank">Open prototype in new tab</a><a class="medium" href="https://www.figma.com/file/7oYg4rdtZyQf4kWRRFnRA2/LOCAL-%7C-%5BLM%5D-Messenger-Revamp?node-id=7938%3A72992&amp;t=GJNt41RpmJbYfZcm-1" style="display: block;color: var(--ylw-6);" target="_blank">Open user flow in new tab</a></div><iframe id="mark-8" class="gsp-single framed mobhide" width="100%" height="860" style="background-color: black;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FcNXoJkzh0D3DdPbcGpGdAz%2FLINE-MAN-Messenger-Redesign%3Fpage-id%3D22%253A28351%26node-id%3D22%253A28472%26scaling%3Dcontain%26starting-point-node-id%3D22%253A28472%26hide-ui%3D1" allowfullscreen></iframe><a class="medium gsp-single mobhide" href="https://www.figma.com/proto/cNXoJkzh0D3DdPbcGpGdAz/LINE-MAN-Messenger-Redesign?page-id=22%3A28351&amp;node-id=22%3A28472&amp;scaling=contain&amp;starting-point-node-id=22%3A28472&amp;hide-ui=1" style="color: var(--bw5);display: block;" target="_blank">Click here&nbsp;to view the prototype in Figma</a>
+                            <p class="xh3 gsp-single mobhide" style="margin: 0px;color: var(--bw4);">User flow</p><iframe id="mark-8" class="gsp-single framed mobhide" width="100%" height="860" loading="lazy" style="background-color: black;" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FcNXoJkzh0D3DdPbcGpGdAz%2FLINE-MAN-Messenger-Redesign%3Fnode-id%3D360%253A11433%26t%3D4fIsK0bQF6D5Wb2c-1" allowfullscreen></iframe><a class="medium gsp-single mobhide" href="https://www.figma.com/file/7oYg4rdtZyQf4kWRRFnRA2/LOCAL-%7C-%5BLM%5D-Messenger-Revamp?node-id=7938%3A72992&amp;t=GJNt41RpmJbYfZcm-1" style="color: var(--bw5);display: block;" target="_blank">Click here&nbsp;to view the prototype in Figma</a>
                             <p class="gsp-single xh3" style="margin: 0px;color: var(--bw4);">Project status &amp; outcomes<br></p>
                             <p class="xp2 light gsp-singlehalf" style="margin: 0px;text-align: justify;color: var(--bw4);">The first phase of the Messenger redesign, focusing on improved flow and user interface, has been completed and handed over to senior designers for refinement. Despite some modifications, the core designs have been implemented and the new LINE MAN Messenger has been in production since October, 2022. Future phases with added features and enhancements, such as delivery tracking sharing and forms, may be implemented in the coming months.</p>
                             <p class="gsp-single xh3" style="margin: 0px;color: var(--bw4);">Key design updates</p>
-                            <div class="row d-flex flex-column flex-lg-row gsp-singlehalf" style="margin: 0;width: 100%;gap: 2rem;">
-                                <div class="col-6" style="padding: 0;">
+                            <div class="row d-flex flex-column-reverse flex-lg-row gsp-singlehalf" style="margin: 0;width: 100%;gap: 2rem;">
+                                <div class="col-12 col-lg-6" style="padding: 0;">
                                     <p class="gsp-halfhalf xp2 bold" style="margin: 0px;color: var(--bw4);">Refreshed appearance</p>
                                     <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">LINE MAN Messenger has now been updated with new visuals to match with other services such as LINE MAN Food and LINE MAN Mart. Elements are updated to match the revamped design system as well.</p>
                                     <p class="gsp-halfhalf xp2 bold" style="margin: 0px;color: var(--bw4);">More visuals</p>
@@ -265,11 +278,11 @@
                                     <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">The new redesign also include ongoing order tracking as well as swappable sender-recipient location.</p>
                                 </div>
                                 <div class="col" style="padding: 0;">
-                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Main%20messenger.png&quot;) center top / cover space;margin-bottom: 0;"></p>
+                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Main%20messenger.png&quot;) 50% 10% / cover space;margin-bottom: 0;min-height: 400px;max-height: 100%;"></p>
                                 </div>
                             </div>
-                            <div class="row d-flex flex-column flex-lg-row gsp-singlehalf" style="margin: 0;width: 100%;gap: 2rem;">
-                                <div class="col-6" style="padding: 0;">
+                            <div class="row d-flex flex-column-reverse flex-lg-row gsp-singlehalf" style="margin: 0;width: 100%;gap: 2rem;">
+                                <div class="col-12 col-lg-6" style="padding: 0;">
                                     <p class="gsp-halfhalf xp2 bold" style="margin: 0px;color: var(--bw4);">Simplified</p>
                                     <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Now, users can fill in their information within the same page and able to review the inputted information quickly and efficiently.</p>
                                     <p class="gsp-halfhalf xp2 bold" style="margin: 0px;color: var(--bw4);">Stay informative</p>
@@ -278,7 +291,7 @@
                                     <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">Sender and recipient locations are now displayed in turquoise and red colour accordingly to distinct these elements from the rest of input fields.</p>
                                 </div>
                                 <div class="col" style="padding: 0;">
-                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Add%20delivery%20details.png&quot;) center top / cover space;margin-bottom: 0;"></p>
+                                    <p class="framed" style="height: 100%;background: url(&quot;../assets/img/projects/messenger/Add%20delivery%20details.png&quot;) 50% 20% / cover space;margin-bottom: 0;min-height: 400px;max-height: 100%;"></p>
                                 </div>
                             </div>
                         </div>
@@ -306,21 +319,23 @@
             </div>
         </div>
     </div>
-    <footer style="padding-bottom: 4rem;width: 100%;">
+    <footer style="padding-bottom: 2rem;width: 100%;">
         <hr style="border-color: var(--bw1);margin-bottom: 1.5rem;">
-        <div class="row flex-column flex-md-row" style="margin: 0px;">
-            <div class="col d-flex flex-column" style="padding: 0px;">
-                <p class="text-center text-md-start xp2 light" style="font-weight: 400;margin-bottom: 0.25rem;color: var(--bw4);">Made with passion by&nbsp;<span class="heavy" style="font-weight: 700;color: var(--bw6);">nuttapong</span></p>
-                <p class="text-center text-md-start xp3 light" id="greets" style="margin-bottom: 0.25rem;color: var(--bw3);">Have a great day! but please enable JavaScript :&lt;&nbsp;</p>
-                <p class="text-center text-md-start xp4 light bw2 deskhide" style="margin-bottom: 1rem;margin-top: 0.5rem;color: var(--bw1);">Contents are optimised for mobile viewing. Try viewing on desktop for even more details.</p>
+        <div class="row flex-column flex-md-row" style="margin: 0px;gap: 0.25rem;">
+            <div class="col d-flex flex-column" style="padding: 0px;margin-bottom: 1rem;">
+                <p class="text-center text-md-start xp2 light" style="font-weight: 400;color: var(--bw4);margin-bottom: 0.25rem;">Made with passion by&nbsp;<span class="heavy" style="font-weight: 700;color: var(--bw6);">nuttapong</span></p>
+                <p class="text-center text-md-start xp3 light" id="greets" style="margin-bottom: 0;color: var(--bw2);">Have a great day! but please enable JavaScript :&lt;&nbsp;</p>
             </div>
-            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;">
-                <p class="text-center text-md-end xp3 light" style="font-weight: 400;margin-bottom: 0.25rem;color: var(--bw3);">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;margin-bottom: 0.5rem;">
+                <p class="text-nowrap text-center text-md-end xp3 light" style="font-weight: 400;margin-bottom: 0;color: var(--bw3);">&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
                     </svg>nsrikamdee@gmail.com</p>
-                <p class="text-center text-md-end xp3 light" style="font-weight: 400;margin-bottom: 0.25rem;margin-left: 1em;color: var(--bw3);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                <p class="text-nowrap text-center text-md-end xp3 light" style="font-weight: 400;margin-bottom: 0;margin-left: 1em;color: var(--bw3);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
                     </svg>(+66) 81 907 9897</p>
+            </div>
+            <div class="col d-flex flex-column deskhide" style="padding: 0px;">
+                <p class="text-center text-md-start xp4 light bw2 gsp-half" style="margin-top: 0.5rem;color: var(--bw1);margin-bottom: 0;">Contents are now optimised for smaller screens. Try viewing on larger screens for even more details.</p>
             </div>
         </div>
     </footer>
