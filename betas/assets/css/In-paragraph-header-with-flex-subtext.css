@@ -1,0 +1,42 @@
+.light {
+  font-weight: 300!important;
+}
+
+@media (min-width: 769px) {
+  .xh5 {
+    font-family: Inter;
+    font-size: calc(0.7rem + 0.5vw);
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    /*text-transform: uppercase!important;*/
+  }
+}
+
+@media (max-width: 768px) {
+  .xh5 {
+    font-family: Inter;
+    font-size: calc(1rem + 0.5vw);
+    letter-spacing: -0.03em;
+    font-weight: 600;
+    /*text-transform: uppercase!important;*/
+  }
+}
+
+@media (min-width: 769px) {
+  .xp3 {
+    font-family: Inter;
+    font-size: calc(0.65rem + 0.5vw);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+  }
+}
+
+@media (max-width: 768px) {
+  .xp3 {
+    font-family: Inter;
+    font-size: calc(0.8rem + 0.5vw);
+    font-weight: 300;
+    letter-spacing: -0.03em;
+  }
+}
+
