@@ -3,7 +3,7 @@
 }
 
 p, img, span, button, row, col, container-fluid {
-  animation: fade-in 600ms!important;
+  animation: fade-in 800ms!important;
 }
 
 .xxx {

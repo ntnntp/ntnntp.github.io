@@ -150,3 +150,7 @@
   filter: saturate(0%);
 }
 
+.topnav-item {
+  padding-right: 1rem!important;
+}
+
