@@ -17,7 +17,7 @@ if (hr >= 1 && hr < 4) {
 	greetsMain.innerHTML = "Hello night owls";
 }
 if (hr >= 4 && hr < 6) {
-	greeter.innerHTML = "🥱 Wow! you're up so early. Enjoy your morning!";
+	greeter.innerHTML = "🌄 Wow! you're up so early. Enjoy your morning!";
 	greetsMain.innerHTML = "Good morning";
 }
 if (hr >= 6 && hr < 9) {
@@ -33,7 +33,7 @@ if (hr >= 12 && hr < 13) {
 	greetsMain.innerHTML = "Good afternoon";
 }
 if (hr >= 13 && hr < 16) {
-	greeter.innerHTML = "💧 Drink plenty of water. Enjoy your afternoon!";
+	greeter.innerHTML = "🌤️ Don't forget to take a break. Enjoy your afternoon!";
 	greetsMain.innerHTML = "Good afternoon";
 }
 if (hr >= 16 && hr < 18) {
@@ -45,11 +45,11 @@ if (hr >= 18 && hr < 19) {
 	greetsMain.innerHTML = "Good evening";
 }
 if (hr >= 19 && hr < 22) {
-	greeter.innerHTML = "🧘 Time to reunite with yourself. Have a peaceful night!";
+	greeter.innerHTML = "🌕 Time to reunite with yourself. Have a peaceful night!";
 	greetsMain.innerHTML = "Good evening";
 }
 if (hr >= 22 && hr < 24) {
-	greeter.innerHTML = "🛌 Time to recharge yourself. Have a peaceful night!";
+	greeter.innerHTML = "✨ Time to recharge yourself. Have a peaceful night!";
 	greetsMain.innerHTML = "Hello night owls";
 }
 

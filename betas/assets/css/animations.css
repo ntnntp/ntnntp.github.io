@@ -145,3 +145,8 @@
   animation: slide-up 600ms;
 }
 
+.fx-x {
+  opacity: 0.25;
+  filter: saturate(0%);
+}
+

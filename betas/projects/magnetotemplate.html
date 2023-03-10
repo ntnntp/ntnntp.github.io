@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en" style="background: var(--bw0);color: var(--bw0);height: 100vh;">
+
+<head>
+    <meta charset="utf-8">
+<meta name=”robots” content=”noindex”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>nuttapongsv3</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/MiRllRiM%20Script.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/In-paragraph-header-with-flex-subtext.css">
+    <link rel="stylesheet" href="../assets/css/navbars.css">
+    <link rel="stylesheet" href="../assets/css/nuttapongs.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+
+<body class="d-flex d-sm-flex flex-column align-items-center justify-content-sm-center align-items-xl-center cssbody cssnav" style="overflow-x: hidden;">
+    <div class="d-flex d-lg-none flex-column justify-content-end align-items-end" style="width: 100%;position: fixed;bottom: 0%;left: 0%;z-index: 99;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-mobnav" href="#collapse-mobnav" role="button" style="border-bottom-left-radius: 0;border-top-left-radius: 99px;border-top-right-radius: 99px;border-bottom-right-radius: 0;background: var(--red-3);padding-left: 1rem;padding-right: 1rem;border-style: none;padding-bottom: 1rem;padding-top: 1rem;margin-right: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-fill" style="width: 1rem;height: 1rem;margin-bottom: 3px;">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+            </svg></a>
+        <div class="collapse" id="collapse-mobnav" style="z-index: 99;width: 100%;">
+            <div class="d-flex flex-column" style="overflow: clip;background: var(--bw0);padding: 2rem;width: 100%;border-top-left-radius: 12px;border-top-right-radius: 12px;border-style: none;border-top: 1px solid var(--bw1);padding-bottom: 3rem;">
+                <p class="d-flex justify-content-between gsp-single xp2" style="margin-bottom: 0;color: var(--bw2);">Chapters<button class="gsp-line xp2 medium" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);border-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-up" style="margin-bottom: 3px;overflow: visible;" onclick="toTop()">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"></path>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg></button></p><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark1()">Summary<span class="light" style="color: var(--bw1);" onclick="toBookmark()">01</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark2()">Designing<span class="light" style="color: var(--bw1);" onclick="toBookmark()">02</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark3()">Results<span class="light" style="color: var(--bw1);" onclick="toBookmark()">03</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark4()">Reflections<span class="light" style="color: var(--bw1);">04</span></button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex justify-content-center" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;background: var(--bw0);width: 100%;border-style: none;border-bottom: 1px none #f4f4f4;">
+        <div class="container-fluid"><a class="navbar-brand bsstrip logo" id="xlogo" href="../index.html" style="text-align: right;transition: color 400ms;margin-left: -0.8125rem!important;color: var(--bw6);">nuttapong</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;padding: 0px;filter: invert(1%);margin-right: -0.8125rem!important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list" style="color: var(--bw6);width: 1.5rem;height: 1.5rem;">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg><span class="visually-hidden">Toggle navigation</span></button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1" style="margin-left: -0.8125rem!important;">
+                <ul class="navbar-nav desknomar" style="color: rgb(143,199,255);padding-bottom: 1rem;margin-right: -0.8125rem;padding-top: 1rem;">
+                    <li class="nav-item"><a class="nav-link active xp2 light xn-item" href="../index.html" style="padding-right: 32px;padding-left: 0px;">projects</a></li>
+                    <li class="nav-item"><a class="nav-link xp2 light xn-item" href="about.html" style="padding-right: 32px;padding-left: 0px;">about me</a></li>
+                    <li class="nav-item"><a class="nav-link xp2 light xn-item" href="https://nuttapongs.com/files/Nuttapong_Srikamdee_UXUI.pdf" style="padding-right: 0px;padding-left: 0px;" target="_blank">get resume</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid d-flex flex-column align-items-center align-items-md-start" style="margin: 0px;max-width: none;padding-left: 0;padding-right: 0;">
+        <div class="d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-xxl-start csshero" style="background: linear-gradient(90deg, #968d2f 44%, rgba(255,255,255,0) 100%), url(&quot;../assets/img/projects/magnetotemplate/Screenshot%202566-01-28%20at%2013.13.52.png&quot;) right / cover no-repeat;background-size: auto, cover;">
+            <div class="row d-flex flex-column flex-md-row" style="width: 100%;margin: 0;gap: 2rem;">
+                <div class="col d-flex flex-column justify-content-center align-items-start" style="padding: 0;">
+                    <p class="xh3" style="margin: 0px;color: #ffffff;">Magnetolabs Website Design Template</p>
+                    <p id="title" class="xh6 light" style="margin: 0px;color: #ffffff;">Magnetolabs</p>
+                    <p class="d-none d-xl-flex xp3 light ani-fade" style="margin: 0px;width: 70%;margin-top: 1em;color: #ffffff;">Designing designer templates and UI components for Magnetolabs</p>
+                </div>
+                <div class="col-auto d-none d-lg-flex" style="padding: 0;">
+                    <div class="d-flex flex-column justify-content-center" style="width: 100%;"><button class="d-flex justify-content-between align-items-center xp3 bw0 medium noul button-pri" style="background: #968d2f;color: #ffffff;border: 2px solid var(--ylw-3);" rel="external" onclick="toBookmark8()">Try the prototype!</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-bottom: 1.5rem;width: 100%;">
+            <div class="row" style="width: 100%;">
+                <div class="col-3 col-xl-2 col-xxl-2 d-none d-lg-block flex-column flex-shrink-1" style="padding: 0px;padding-right: calc(1em + 2vw);border-style: none;border-right: 1px none #d4d4d4;">
+                    <div class="d-none d-md-none d-lg-block xsticky" style="animation: fade-in 500ms;">
+                        <div id="minititle" class="justHide" style="animation: fade-in 500ms;">
+                            <p class="xh4" style="margin: 0px;color: var(--bw4);">Magnetolabs&nbsp; Template</p>
+                            <p class="xp3 light x75" style="margin: 0px;margin-bottom: 4em;padding-bottom: 0.5em;border-bottom: 1px solid #f4f4f4;margin-top: 0.5em;color: var(--bw2);">Magnetolabs</p>
+                        </div><button class="btn btn-primary d-flex justify-content-start pi xh6" id="subnav-1" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark1()">Summary</button><button class="btn btn-primary d-flex justify-content-start ani1 pi xh6" id="subnav-2" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark2()">Designing</button><button class="btn btn-primary d-flex justify-content-start ani1 pi xh6" id="subnav-4" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark4()">Results</button><button class="btn btn-primary d-flex justify-content-start ani1 pi xh6" id="subnav-5" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark4()">Reflections</button>
+                    </div><button class="btn btn-primary d-flex justify-content-start align-items-xxl-center ani1 justHide pi xh6" id="btt" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;position: sticky!important;top: 90vh;z-index: 10;animation: fade-in 500ms;border-style: none;border-bottom-style: solid;" onclick="toTop()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-up" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"></path>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg>&nbsp;Back to top</button>
+                </div>
+                <div class="col ani-slide-up" style="padding: 0px;width: 1013.84px;">
+                    <div class="row justHide" style="margin: 0px;margin-bottom: 2em;">
+                        <div class="col d-flex d-xxl-flex align-items-center align-items-xxl-center" style="padding: 0;">
+                            <p id="mark-1" class="xh4 light bw2" style="margin-bottom: 0px;">01</p>
+                            <p class="xh5 bw3 xlight" style="margin-left: 1em;margin-bottom: 0px;margin-right: 1em;width: 20%;">summary</p>
+                            <hr style="width: 100%;">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;margin-bottom: 0;">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-singlehalf" style="padding: 0;"><img class="img-fluid framed gsp-single" src="../assets/img/projects/magnetotemplate/Screenshot%202566-01-28%20at%2013.13.52.png" loading="eager">
+                            <p class="xh2 heavy gsp-half" style="margin: 0px;text-align: left;color: var(--bw5);">Flexible framework</p>
+                            <p class="xp2 regular gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);"><strong>Designing</strong> website from <strong>scratch</strong> every time will <strong>cost</strong> a lot of <strong>time</strong> (and <strong>revenue</strong>). This <strong>template</strong>, consisting of pre-made <strong>pages</strong>, UI <strong>elements</strong>, and <strong>design systems</strong>, will <strong>speed</strong> up the <strong>process</strong> of website <strong>design</strong> at <strong>Magnetolabs </strong>agency.</p>
+                            <hr class="gsp-double" style="width: 100%;margin-top: 0;background: var(--bw1);">
+                            <p class="xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;">Scope of the project</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">This team project is aimed to develop a&nbsp;comprehensive&nbsp;framework for designing websites, including commonly used pages, user interface elements, and design system templates. The framework will be crafted to align with the WordPress CMS platform.</p>
+                            <p class="d-flex flex-column justify-content-start align-items-start flex-md-row justify-content-md-between align-items-md-center xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;gap: 0.25rem;">Project status<span class="xp3 medium" style="color: var(--bw2);">Utilised&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-gear-fill" style="margin-left: 6px;">
+                                        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"></path>
+                                    </svg></span></p>
+                            <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">After completing the internship at Magnetolabs in 2021, the project has been handed over to the agency for future uses.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-2" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">02</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Diving in</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-singlehalf" style="padding: 0;">
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Team project</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">In this project, the design team have worked closely with Client Service Director and developers to ensure that the framework will serve maximal benefits as well as achievable in WordPress development.</p>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Previous Magnetolabs designs</p><img class="img-fluid framed gsp-single" src="../assets/img/projects/magnetotemplate/Group%2019.png" loading="eager">
+                            <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">To initially see what is attainable in WordPress, apart from obtaining insights and knowledge from senior developers and WordPress documentations, I have also analysed the previous projects of the agency which are developed using WordPress.&nbsp;</p>
+                        </div>
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-singlehalf" style="padding: 0;">
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Needed pages</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">After getting design requirements and data, here are the pages that needed to be created:</p>
+                            <div class="row gsp-singlehalf" style="margin: -1rem;width: 100%;">
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Homepage</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Highlights of the company</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>About</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Details of the company</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Contact</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Contact details with forms</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Products</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">List / card view of items</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>&nbsp;Product Details</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Item with commerce &amp; details&nbsp;</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>&nbsp;Resources</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">List / card view of items &amp; CTA</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>&nbsp;Landing page</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Multipurpose view with CTA</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Misc. page</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Multipurpose view</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Notices</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Plain-text page</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Careers</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">List view of items</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>Career Forms</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Item with details &amp; forms</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>&nbsp;Blog</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">List / card view with description</p>
+                                </div>
+                                <div class="col-6 col-lg-4 col-xxl-3" style="padding: 1rem;">
+                                    <p class="xh6" style="margin: 0px;text-align: justify;color: var(--bw4);margin-bottom: 0.25rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-circle-fill" style="margin-bottom: 4px;margin-right: 8px;">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>&nbsp;Blog Details</p>
+                                    <p class="xp3" style="margin: 0px;text-align: justify;color: var(--bw3);">Article with CTA hero</p>
+                                </div>
+                            </div>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Design objective</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">And before designing, the objective of this project can be summarised as follow:</p>
+                            <div class="row" style="margin: -1rem;">
+                                <div class="col-12 col-sm-12 col-lg-4" style="padding: 1rem;">
+                                    <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start" style="background: var(--cyn-1);border-radius: 12px;padding: 2rem;width: 100%;height: 100%;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--cyn-6);">Practical.</span><span class="xp3 light cyn5 x75" style="text-align: left;color: var(--cyn-6);">The template needs to be achievable by WordPress, ideally without implementing too many additional code.</span></div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-4" style="padding: 1rem;">
+                                    <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start" style="background: var(--cyn-1);border-radius: 12px;padding: 2rem;width: 100%;height: 100%;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--cyn-6);">Easy to use.</span><span class="xp3 light cyn5 x75" style="text-align: left;color: var(--cyn-6);">The template needs to be easily usable and customisable by designers in the future</span></div>
+                                </div>
+                                <div class="col-12 col-sm-12 col-lg-4" style="padding: 1rem;">
+                                    <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start" style="background: var(--cyn-1);border-radius: 12px;padding: 2rem;width: 100%;height: 100%;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--cyn-6);">Complete.</span><span class="xp3 light cyn5 x75" style="text-align: left;color: var(--cyn-6);">The template needs to cover most pages in a typical website designs and contains common UI elements.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-3" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">03</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Results</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-single" style="padding: 0;">
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Atom methodologies</p>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Atom methodologies</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The frameworks are designed using atom design methodologies — beginning from the smallest element such as links, text fields, paragraphs, and headings.<br><br>These will then form a bigger elements such as input field with labels and buttons and navigation items, which will then later be formed into even bigger elements such as hero banners, navigation bars, forms, article reader, and so much more.</p>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Benefits</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Not only using atom methodologies will improve the cohesiveness of the design, but it will also enables easier customisation and flexibility when correctly implemented in Figma. In other words, future designers will be able to configure the templates easily by only changing some properties of the small elements such as colours, fonts, and styles.</p>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Implementation testing</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">After the template has been created, I then tried using the templates myself. I have created two virtual companies with different design and moods to see if the template is able to shorten the designing time while being flexible.&nbsp;</p><span class="xh4 gsp-half" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);">SECURE Insurance</span><img class="img-fluid framed gsp-half" src="../assets/img/projects/magnetotemplate/SS%2047.png"><span class="xp3 gsp-single regular" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);"><strong>Company keywords:&nbsp; </strong>trustworthy, clean, modern, medical<br><strong>CI colours:&nbsp; &nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-square-fill" style="margin-bottom: 2px;margin-right: 4px;color: rgb(0,163,255);">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>Deep Sky Blue<br><strong>Business sector:&nbsp;</strong> &nbsp;Insurance</span><span class="xh4 gsp-half" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);">SweetHouse Residences</span><img class="img-fluid framed gsp-half" src="../assets/img/projects/magnetotemplate/SS%2048.png"><span class="xp3 gsp-singlehalf regular" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);"><strong>Company keywords:&nbsp; &nbsp;</strong>peace, trustworthy, serene, modern, classy<br><strong>CI colours:&nbsp; &nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-square-fill" style="margin-bottom: 2px;margin-right: 4px;color: rgb(123,150,90);">
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                </svg>Natural Green <br><strong>Business sector:&nbsp;</strong> &nbsp;Residences &amp; real estate</span>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Reduced designing time</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Usually, the designing process at Magnetolabs take roughly about 2-3 weeks for the first draft of all pages. When the framework template is implemented in the design process, it has significantly reduce the drafting time to only less than a week.<br><br>However, this certainly will not be one-edit-and-done thing. The design framework is meant to serve as a kickstarter for the design draft, and not meant to be a finished product.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-4" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">04</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Reflections</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-double" style="padding: 0;">
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Freedom in designing</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">In this project, although I have considered I am delighted that I can (re)design this website without any major limits such as time and financial concerns and do additional processes such as refined user testing and digging deep in the technical aspects of the project.</p>
+                            <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Using gained experience</p>
+                            <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">Before this project comes to the current version, I have previously done a redesign of Reg Chula before —&nbsp; without any UX/UI organisation knowledge. But after finishing an internship at Magnetolabs, I have gained a lot of experiences including using Figma as a prototyping tool, utilising design systems, grid systems, layouts. After revisiting this project with more experience, I have addressed numerous issues in my design (as well as my portfolio website) and decided to reiterate the design in Figma to exercise my skills.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="padding-bottom: 2rem;width: 100%;">
+        <hr style="border-color: var(--bw1);margin-bottom: 1.5rem;">
+        <div class="row flex-column flex-md-row" style="margin: 0px;gap: 0.25rem;">
+            <div class="col d-flex flex-column" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;">
+                <p class="text-center text-md-start xp2 light" style="font-weight: 400;color: var(--bw4);margin-bottom: 0;">Made with passion by&nbsp;<span class="heavy" style="font-weight: 700;color: var(--bw6);">nuttapong</span></p>
+                <p class="text-center text-md-start xp3 light" id="greets" style="margin-bottom: 0;color: var(--bw2);">Have a great day! but please enable JavaScript :&lt;&nbsp;</p>
+            </div>
+            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;"><a class="xp3 light" href="mailto:nsrikamdee@gmail.com?subject=%5BHello%5D%20" style="font-weight: 400;margin-bottom: 0;color: var(--bw3);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+                    </svg>nsrikamdee@gmail.com</a><a class="xp3 light" href="tel:+66819079897" style="font-weight: 400;margin-bottom: 0.25rem;color: var(--bw3);margin-left: 1rem;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                    </svg>(+66) 81 907 9897</a></div>
+            <div class="col d-flex flex-column deskhide" style="padding: 0px;">
+                <p class="text-center text-md-start xp4 light bw2 gsp-half" style="margin-top: 0.5rem;color: var(--bw1);margin-bottom: 0;">Contents are now optimised for smaller screens. Try viewing on larger screens for even more details.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="../assets/js/greets.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/scroller.js"></script>
+    <script src="../assets/js/uwu.js"></script>
+</body>
+
+</html>

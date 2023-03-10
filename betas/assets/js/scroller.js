@@ -47,6 +47,7 @@ function toTop() {
 	$('#collapse-mobnav').collapse("hide");
 }
 
+
 function toBookmark1() {
 	window.scrollTo({
 		 top: document.getElementById("mark-1").offsetTop-(offH),
