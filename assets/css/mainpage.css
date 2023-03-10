@@ -1,7 +1,6 @@
 @media only screen and (orientation: landscape) {
   .indexbg {
     background: url("../../assets/img/background-desktop.jpg") center center no-repeat fixed;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
@@ -11,7 +10,6 @@
 @media only screen and (orientation: portrait) {
   .indexbg {
     background: url("../../assets/img/background-portrait.jpg") center center no-repeat fixed;
-    -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;

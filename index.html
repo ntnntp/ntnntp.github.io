@@ -53,12 +53,25 @@
 <!-- ถึงผมจะเรียนอยู่ในคณะนิเทศศาสตร์ และไม่ใช่คณะวิทยาศาสตร์หรือวิศวกรรม ผมก็สามารถออกแบบเว็บไซต์นี้เองโดยไม่ได้ใช้เทมเพลตใดๆ ด้วยความช่วยเหลือจาก stackoverflow, css-tricks และ google นี้เอง ผมได้มีโอกาสนำความรู้เกี่ยวกับ HTML มาปัดฝุ่นอีกครั้ง และเรียนรู้ CSS กับ JS เพิ่มในเวลาเดียวกัน -->
 </head>
 
-<body class="indexbg" style="text-shadow: 0px 0px 75px #000000;"><div class="fullscreen-bg hideonmobiles">
-<video playsinline webkit-playsinline loop muted autoplay poster="background-desktop.jpg" class="fullscreen-bg__video hideonmobiles" style="filter: brightness(75%) blur(3px); transform: scale(1.1);">
+<body class="indexbg" style="text-shadow: 0px 0px 75px #000000;">
+    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Notice</h4><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"><img class="img-fluid" src="assets/img/SS%2074.jpg" style="margin-bottom: 15px;">
+                    <p style="text-align: justify;"><span style="color: rgba(0, 0, 0, 0.85);">My website will be undergoing an update on&nbsp;</span>March 11-12 2022<span style="color: rgba(0, 0, 0, 0.85);">. During this time, the website may be temporarily unavailable. I apologise for any inconvenience and appreciate your patience. Once complete, expect a refreshed look, improved navigation, and updated content.</span></p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+            </div>
+        </div>
+    </div><div class="fullscreen-bg hideonmobiles">
+<video playsinline webkit-playsinline loop muted autoplay poster="background-desktop.jpg" class="fullscreen-bg__video hideonmobiles" style="filter: brightness(75%) blur(3px);transform: scale(1.1);">
 <source src="https://github.com/ntnntp/ntnntp.github.io/raw/main/bgvid.mp4" type="video/mp4">
 </video>
 </div>
-    <div style="z-index: 75!important; margin-top: 25vh;margin-left: 4vw;margin-right: 4vw;margin-bottom: 6vh;">
+    <div style="z-index: 75!important;margin-top: 25vh;margin-left: 4vw;margin-right: 4vw;margin-bottom: 6vh;">
         <div class="row" style="margin-right: 0px;margin-left: 0px;">
             <div class="col-12 pusher" style="width: 100vw;padding-right: 0px;padding-left: 0px;">
                 <h2 class="text-left d-inline-flex d-xl-flex flex-grow-1 flex-shrink-1 justify-content-xl-start" style="color: #ffffff;font-family: made_evolve_sanslight;font-size: 42px;font-weight: 100;width: 80vw;">hi there! meet</h2>
@@ -66,7 +79,7 @@
                 <h3 class="text-left d-inline-flex d-xl-flex flex-grow-1 flex-shrink-1 align-items-md-center justify-content-xl-start" id="text-occupations" style="color: #ffffff;font-family: made_evolve_sanslight;font-size: 36px;font-weight: 100;width: 80vw;margin-bottom: 15px;height: 86px;">an all-in-one package, a Chulalongkorn University student,a (future) ux/ui designer,a free time video editor, a freelance vfx editor,a graphic designer</h3>
                 <h4 class="text-left d-inline-flex d-xl-flex flex-grow-1 flex-shrink-1 justify-content-xl-start" style="color: #ffffff;font-family: made_evolve_sansthin;font-size: 24px;font-weight: 100;width: 80vw;margin-bottom: 28px;margin-top: 0px;transition: 500ms;padding-top: 30px;">easy-going, fast-learning, and highly adaptive person<br>with (really) multiple all-rounded talents</h4>
             </div>
-            <div class="col-12 pusher" style="width: 100vw;padding-right: 0px;padding-left: 0px; z-index: 75;"><a class="btn btn-primary active explorebtn" role="button" style="z-index:95!important; font-family: made_evolve_sansregular!important;margin-top: 8px;letter-spacing: 0.2px!important;margin-bottom: 30px;padding-right: 20px;padding-left: 19px;border-radius: 30px;border: 1px solid #ffffff;background: rgba(255,255,255,0);" href="/en/summary.html">GET STARTED!</a></div>
+            <div class="col-12 pusher" style="width: 100vw;padding-right: 0px;padding-left: 0px;z-index: 75;"><a class="btn btn-primary active explorebtn" role="button" style="z-index: 95!important;font-family: made_evolve_sansregular!important;margin-top: 8px;letter-spacing: 0.2px!important;margin-bottom: 30px;padding-right: 20px;padding-left: 19px;border-radius: 30px;border: 1px solid #ffffff;background: rgba(255,255,255,0);" href="/en/summary.html">GET STARTED!</a></div>
         </div>
     </div>
     <div class="d-flex d-md-flex flex-column justify-content-md-end align-items-md-end bottombar-idx bottombar hovergrad" style="background: #ffffff;padding-top: 15px;z-index: 50!important;margin-bottom: 0px;padding-bottom: 0px;margin-top: 0px;">
@@ -98,6 +111,7 @@
     <script src="assets/js/morphext.min.js"></script>
     <script src="assets/js/navbar.js"></script>
     <script src="assets/js/rotator.js"></script>
+    <script src="assets/js/untitled.js"></script>
     <script src="assets/js/validate.js"></script>
 </body>
 

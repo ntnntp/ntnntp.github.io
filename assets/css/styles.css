@@ -335,7 +335,6 @@ a.text-dark:focus, a.text-dark:hover {
 }
 
 .selable {
-  -webkit-user-select: text;
   -moz-user-select: text;
   -ms-user-select: text;
   user-select: text;
