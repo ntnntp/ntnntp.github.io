@@ -1,0 +1,16 @@
+.navbar {
+  background-color: transparent;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255,255,255,1);
+}
+
+.xn-item {
+  color: var(--bw4)!important;
+}
+
+.xn-item:hover {
+  color: var(--bw6);
+}
+
