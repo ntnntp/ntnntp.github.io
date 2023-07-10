@@ -103,7 +103,7 @@ p, img, span, button, row, col, container-fluid {
 
 hr {
   opacity: 1!important;
-  color: #eaeaea!important;
+  color: var(--bw1);
 }
 
 .accordion-item {

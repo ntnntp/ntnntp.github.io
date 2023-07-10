@@ -672,3 +672,8 @@ body {
   background: var(--bw0);
 }
 
+.quote {
+  border-left: 2px solid var(--bw4);
+  padding-left: 1rem;
+}
+

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100vh;background: var(--bw0);">
+
+<head>
+    <meta charset="utf-8">
+<meta name=”robots” content=”noindex”>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>BIKEY App UX Case Study | nuttapong's portfolio</title>
+    <meta name="twitter:card" content="summary">
+    <meta property="og:image" content="https://nuttapongs.com/assets/img/projects/messengerinterstitial/SS 83.png">
+    <meta name="description" content="Companion app for e-bikes and scooters to display vital information">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
+    <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:400,700&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/MiRllRiM%20Script.css">
+    <link rel="stylesheet" href="../assets/css/animations.css">
+    <link rel="stylesheet" href="../assets/css/colors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/navbars.css">
+    <link rel="stylesheet" href="../assets/css/nuttapongs.css">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+<link href="/favicon.png" rel="icon" type="image/x-icon" />
+<!-- Homepage Tag - Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-QYQXETH453"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-QYQXETH453');
+</script>
+<!-- Although Nuttapong is studying in Communication Management and not fancy Computer Science or Engineering, he designed this website himself, no templates, nothing. With help of stackoverflow, css-tricks, and google, I learned a great deal of HTML and CSS (with some bits of JS also.) -->
+<!-- ถึงผมจะเรียนอยู่ในคณะนิเทศศาสตร์ และไม่ใช่คณะวิทยาศาสตร์หรือวิศวกรรม ผมก็สามารถออกแบบเว็บไซต์นี้เองโดยไม่ได้ใช้เทมเพลตใดๆ ด้วยความช่วยเหลือจาก stackoverflow, css-tricks และ google นี้เอง ผมได้มีโอกาสนำความรู้เกี่ยวกับ HTML มาปัดฝุ่นอีกครั้ง และเรียนรู้ CSS กับ JS เพิ่มในเวลาเดียวกัน -->
+</head>
+
+<body class="d-flex d-sm-flex flex-column align-items-center justify-content-sm-center align-items-xl-center cssbody cssnav" style="overflow-x: hidden;">
+    <div class="d-flex d-lg-none flex-column justify-content-end align-items-end" style="width: 100%;position: fixed;bottom: 0%;left: 0%;z-index: 99;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-mobnav" href="#collapse-mobnav" role="button" style="border-bottom-left-radius: 0;border-top-left-radius: 99px;border-top-right-radius: 99px;border-bottom-right-radius: 0;background: var(--red-3);padding-left: 1rem;padding-right: 1rem;border-style: none;padding-bottom: 1rem;padding-top: 1rem;margin-right: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-fill" style="width: 1rem;height: 1rem;margin-bottom: 3px;">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+            </svg></a>
+        <div class="collapse" id="collapse-mobnav" style="z-index: 99;width: 100%;">
+            <div class="d-flex flex-column" style="overflow: clip;background: var(--bw0);padding: 2rem;width: 100%;border-top-left-radius: 12px;border-top-right-radius: 12px;border-style: none;border-top: 1px solid var(--bw1);padding-bottom: 3rem;">
+                <p class="d-flex justify-content-between gsp-single xp2" style="margin-bottom: 0;color: var(--bw2);">Chapters<button class="gsp-line xp2 medium" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);border-style: none;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-up" style="margin-bottom: 3px;overflow: visible;" onclick="toTop()">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"></path>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg></button></p><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark1()">Summary<span class="light" style="color: var(--bw1);" onclick="toBookmark()">01</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark2()">Requirements<span class="light" style="color: var(--bw1);" onclick="toBookmark()">02</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark3()">Ideations<span class="light" style="color: var(--bw1);" onclick="toBookmark()">03</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark4()">Results<span class="light" style="color: var(--bw1);" onclick="toBookmark()">04</span></button><button class="d-flex justify-content-between xh5 gsp-line" type="button" style="padding: 0;background: var(--transparent);text-align: left;color: var(--bw4);padding-bottom: 0.5rem;border-style: none;border-bottom-style: solid;border-bottom-color: var(--bw1);" onclick="toBookmark5()">Reflections<span class="light" style="color: var(--bw1);">05</span></button>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex justify-content-center" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;background: var(--bw0);width: 100%;border-style: none;border-bottom: 1px none #f4f4f4;">
+        <div class="container-fluid"><a class="navbar-brand bsstrip logo" id="xlogo" href="https://nuttapongs.com" style="text-align: right;transition: color 400ms;margin-left: -0.8125rem!important;color: var(--bw6);">nuttapong</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;padding: 0px;filter: invert(1%);margin-right: -0.8125rem!important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list" style="color: var(--bw6);width: 1.5rem;height: 1.5rem;">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                </svg><span class="visually-hidden">Toggle navigation</span></button>
+            <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1" style="margin-left: -0.8125rem!important;">
+                <ul class="navbar-nav desknomar" style="color: rgb(143,199,255);padding-bottom: 1rem;margin-right: -0.8125rem;padding-top: 1rem;">
+                    <li class="nav-item"><a class="nav-link active xp2 light xn-item" href="https://nuttapongs.com" style="padding-right: 32px;padding-left: 0px;">projects</a></li>
+                    <li class="nav-item"><a class="nav-link xp2 light xn-item" href="https://nuttapongs.com/about.html" style="padding-right: 32px;padding-left: 0px;">about me</a></li>
+                    <li class="nav-item"><a class="nav-link xp2 light xn-item" href="https://nuttapongs.com/files/Nuttapong_Srikamdee_UXUI.pdf" style="padding-right: 0px;padding-left: 0px;" target="_blank">get resume</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid d-flex flex-column align-items-center align-items-md-start" style="margin: 0px;max-width: none;padding-left: 0;padding-right: 0;">
+        <div class="d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-xxl-start csshero" style="border-top-left-radius: 16px;border-top-right-radius: 16px;background: linear-gradient(90deg, #855a36 45%, rgba(255,255,255,0) 100%), url(&quot;../assets/img/projects/bikey/young-adult-using-electric-scooter-transportation.webp&quot;) 129% 47% / 70% no-repeat;background-size: auto, 70%;">
+            <div class="row d-flex flex-column flex-md-row" style="width: 100%;margin: 0;gap: 2rem;">
+                <div class="col d-flex flex-column justify-content-center align-items-start" style="padding: 0;">
+                    <p class="xh3" style="margin: 0px;color: #ffffff;">BIKEY Application UX Case Study</p>
+                    <p id="title" class="xh6 light" style="margin: 0px;color: #ffffff;">Personal project - 2023</p>
+                    <p class="d-none d-xl-flex xp3 light ani-fade" style="margin: 0px;width: 70%;margin-top: 1em;color: #ffffff;">Companion app for e-bikes and scooters to display vital information</p>
+                </div>
+                <div class="col-auto d-flex mobhide" style="padding: 0;">
+                    <div class="d-flex flex-column justify-content-center" style="width: 100%;"><button class="d-flex justify-content-between align-items-center xp3 bw0 medium noul button-pri" style="background: #855a36;color: #ffffff;border: 2px solid var(--org-3);" rel="external" onclick="toBookmark8()">View designs</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-bottom: 1.5rem;width: 100%;">
+            <div class="row" style="width: 100%;">
+                <div class="col-3 col-xl-2 col-xxl-2 d-flex flex-column flex-shrink-1 mobhide" style="padding: 0px;padding-right: calc(1em + 2vw);border-style: none;border-right: 1px none #d4d4d4;">
+                    <div class="xsticky" style="animation: fade-in 500ms;">
+                        <div id="minititle" class="justHides" style="animation: fade-in 500ms;">
+                            <p class="xh4" style="margin: 0px;color: var(--bw4);">BIKEY App UX Case Study</p>
+                            <p class="xp3 light x75" style="margin: 0px;margin-bottom: 4em;padding-bottom: 0.5em;border-bottom: 1px solid #f4f4f4;margin-top: 0.5em;color: var(--bw2);">Personal project - 2023</p>
+                        </div><button class="btn btn-primary d-flex justify-content-start pi xh6 ani1" id="subnav-1" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark1()">Summary</button><button class="btn btn-primary d-flex justify-content-start pi xh6 ani1" id="subnav-2" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark2()">Researches</button><button class="btn btn-primary d-flex justify-content-start pi xh6 ani1" id="subnav-3" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark3()">Designs</button><button class="btn btn-primary d-flex justify-content-start pi xh6 ani1" id="subnav-5" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;border-bottom-style: solid;" onclick="toBookmark5()">What's next</button>
+                    </div><button class="btn btn-primary d-flex justify-content-start align-items-xxl-center justHide pi xh6 ani1" id="btt" type="button" style="width: 100%;padding-top: 0;padding-right: 0;padding-bottom: 0.5em;padding-left: 0;background: transparent;border-radius: 0;margin-bottom: 2em;position: sticky!important;top: 90vh;z-index: 10;animation: fade-in 500ms;border-style: none;border-bottom-style: solid;" onclick="toTop()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chevron-double-up" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                            <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"></path>
+                            <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"></path>
+                        </svg>&nbsp;Back to top</button>
+                </div>
+                <div class="col" style="padding: 0px;width: 1013.84px;">
+                    <div class="row justHide" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-1" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">05</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Reflections</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row gsp-double" style="margin: 0px;">
+                        <div class="col-12 d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1" style="padding: 0;">
+                            <div class="alert alert-info alert-dismissible" role="alert" style="width: 100%;color: var(--blu-6);background: var(--blu-1);border-style: none;"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span class="xp4"><strong>The UX part of project is completed. Now, this project is undergoing UI designs and will finish soon.</strong></span></div><img class="img-fluid framed gsp-single" src="../assets/img/projects/bikey/young-adult-using-electric-scooter-transportation.webp" loading="eager">
+                            <p class="xh2 heavy gsp-half" style="margin: 0px;text-align: left;color: var(--bw5);">Bike in check, ride without wreck!</p>
+                            <p class="xp2 regular gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The <strong>BIKEY app</strong> <strong>companies</strong> <strong>e-bikes </strong>and <strong>scooters</strong> with <strong>user-friendly features</strong> , enhancing the <strong>integration</strong> between the <strong>vehicles</strong> and <strong>smartphones</strong>. It aims to make <strong>commutes</strong> more <strong>efficient</strong> and <strong>enjoyable</strong>.</p>
+                            <hr class="gsp-double" style="width: 100%;margin-top: 0;background: var(--bw1);">
+                            <p class="xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;">What is "BIKEY" application</p>
+                            <p class="xp2 light gsp-half" style="margin: 0px;text-align: justify;color: var(--bw4);">BIKEY is a dashboard application for supported e-bikes and scooters (specifically using JK/Jikong <em>BMS</em>*) to monitor information and provide useful features while commuting. Together with supported hardware, it can enhance the commuting experience, promote commute efficiency, and ensure user safety in emergency situations.</p>
+                            <p class="xp3 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw2);"><em>*BMS stands for Battery Management System.</em></p>
+                            <p class="xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;">Project objectives</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Design a companion application for smart e-bike and scooter users to enhance functionality, safety, and convenience. </p>
+                            <p class="d-flex flex-column justify-content-start align-items-start flex-md-row justify-content-md-between align-items-md-center xh5 gsp-half" style="margin: 0px;text-align: justify;color: var(--bw3);width: 100%;gap: 0.25rem;">Project status<span class="xp3 medium" style="color: var(--bw2);">Iterate&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-repeat" style="margin-left: 6px;">
+                                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+                                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"></path>
+                                    </svg></span></p>
+                            <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">The first design was finished in July 2023. Further design iterations and revisions will be made, and after finalisation, Nuttapong will start to learn Swift and hopefully finish the app.</p>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-2" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">02</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Researches</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;">
+                        <div class="col d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1" style="padding: 0;">
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">I heard "BMS"... what is that?</p>
+                            <div class="row d-flex flex-column flex-lg-row gsp-singlehalf" style="margin: 0;width: 100%;gap: 2rem;">
+                                <div class="col-12 col-lg-5 col-xl-4" style="padding: 0;">
+                                    <p class="framed" style="margin: 0px;text-align: justify;color: var(--bw4);width: 100%;height: 100%;background: url(&quot;../assets/img/projects/bikey/SS%20375.jpg&quot;) bottom left / cover;min-height: 350px;"><br> </p>
+                                </div>
+                                <div class="col" style="padding: 0;">
+                                    <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);"><strong>See that black box? That's BMS - Battery Management System.</strong><br><br>It's a crucial device found in e-vehicles that manages charging, power output, and safeguards the battery. Without it, the battery risks damage, overheating, excessive charging, or power overload, which could be expensive to replace and even lead to explosions.<br><br>There are normal BMS, which comes with preprogrammed parameters and nothing else, but what we are working with is the smart BMS, which can communicate via Bluetooth and have extended functionalities, like this one.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">If something is <em>smart</em>, isn't there an app for it?</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);"><strong>Yes, there is.</strong><br><br>However, there's a problem: the available apps are either lacking in features, not visually appealing, or both. Through research, I will soon uncover the user's unmet expectations and the difficulties they face while using these apps.</p>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Competitor analysis</p>
+                    <p class="xh4 gsp-halfhalf" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Talaria</p>
+                    <p class="xp2 light gsp-half" style="margin: 0px;text-align: justify;color: var(--bw4);">This is the closest of the app we are designing. The app is made by battery manufacturer Greenway. It features connection to BMS as well as providing useful commute information. However, the app appears to be experimental, and some features are broken. The app is only available via Android platform, leaving iOS users behind.<br><br>Here is my analysis of this app:</p><img class="img-fluid framed gsp-singlehalf" src="../assets/img/projects/bikey/Group1.webp" loading="eager" style="padding: 1rem;background: #ffffff;">
+                    <p class="xh4 gsp-halfhalf" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">JK BMS</p>
+                    <p class="xp2 light gsp-half" style="margin: 0px;text-align: justify;color: var(--bw4);">This app is primarily used to monitor battery in power walls and battery packs. The app is made by BMS manufacturer Jikong BMS. It indeed features connection to BMS and configuration of parameters, but did not feature anything related to the commute. The app works 95% as expected — it's just very cluttered and hard to understand.<br><br>These are what I have found:</p><img class="img-fluid framed gsp-singlehalf" src="../assets/img/projects/bikey/Group2.webp" loading="eager" style="padding: 1rem;background: #ffffff;">
+                    <p class="xh4 gsp-halfhalf" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Related app: Speedometer</p>
+                    <p class="xp2 light gsp-half" style="margin: 0px;text-align: justify;color: var(--bw4);">This app is... a GPS speedometer. It indicates the phone speed in a big digital-style text, together with commute-related information like trip distance, time elapsed, elevation, integrated maps, and more. As this app is not specific to e-bike or scooters, it lacks the BMS connection feature.<br><br>This is my analysis for the app:</p><img class="img-fluid framed gsp-singlehalf" src="../assets/img/projects/bikey/Group3.webp" loading="eager" style="padding: 1rem;background: #ffffff;">
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">User reviews and discussions</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Despite very limited user reviews and discussions, I managed to gather some valuable insights regarding these apps from online e-bike forums, battery building forums, and Reddit communities.</p>
+                    <div class="row gsp-single" style="margin: -1rem;">
+                        <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                            <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--bw0);padding: 2rem;width: 100%;height: 100%;"><span class="xh5" style="width: 100%;margin-bottom: 0.5em;color: var(--bw5);">Distance tracking is crucial for users</span><span class="xp3 light" style="text-align: justify;color: var(--bw3);">Users often need this information to track their trip and estimate the power usage.</span></div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                            <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--bw0);padding: 2rem;width: 100%;height: 100%;"><span class="xh5" style="width: 100%;margin-bottom: 0.5em;color: var(--bw5);">Users hate Chinese OEM apps</span><span class="xp3 light" style="text-align: justify;color: var(--bw3);">Apps produced by Chinese OEM are deemed to be insufficient and poorly designed.</span></div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                            <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--bw0);padding: 2rem;width: 100%;height: 100%;"><span class="xh5" style="width: 100%;margin-bottom: 0.5em;color: var(--bw5);">Users are always on the lookout for apps that serve them</span><span class="xp3 light" style="text-align: justify;color: var(--bw3);">Especially on iOS, there is no apps that are optimised for e-bike commutes.</span></div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                            <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--bw0);padding: 2rem;width: 100%;height: 100%;"><span class="xh5" style="width: 100%;margin-bottom: 0.5em;color: var(--bw5);">Some users understand the technical terms, but most don't, relying on online help.</span><span class="xp3 light" style="text-align: justify;color: var(--bw3);">There are only handful of users that are knowledgable enough to quickly understand all the information presented in BMS app.</span></div>
+                        </div>
+                    </div>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Qualitative research</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The casual interview (or as I called it a discussion/talk) was conducted with 24 years old office worker. Insights and statements from the interview is synthesised into user personas below for easier understanding.</p>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">User personas</p>
+                    <div class="framed gsp-single" style="padding: 2rem;background: #fefefe;">
+                        <div class="row d-flex flex-column-reverse flex-xl-row gsp-half" style="margin: 0;width: 100%;gap: 2rem;">
+                            <div class="col" style="padding: 0;">
+                                <p class="xh2 gsp-half" style="margin: 0px;margin-bottom: 0.5em;color: #545454;">Boong</p>
+                                <p class="xp3 gsp-half x75" style="margin: 0px;margin-bottom: 0.5em;color: #545454;">Male, 24 yr.<br>Graduated Bachelor's Degree, working as a Marketing strategist in Bangkok, TH<br>Lives with family</p>
+                                <p class="xp2 light gsp-half quote bold" style="margin: 0px;text-align: left;color: #545454;">E-bike is the best way to commute ever! I don’t need to cramp inside crowded trains, and I don’t have to be stuck in a forever-stuck Bangkok traffic!</p>
+                                <p class="xp2 light" style="margin: 0px;text-align: justify;color: #545454;">Boong lives in the outer area of Bangkok, and he needs to travel almost 40 kilometres roundtrip everyday through heavy traffic. He always uses his e-bike to its very limits, and often comes home with a few percent of battery left. However, with new routes, he wasn’t so sure if the bike will make it home, and when there are detours while travelling home, he sometimes stuck on the road as the bike cuts the power off.</p>
+                            </div>
+                            <div class="col-12 col-xl-4" style="padding: 0;">
+                                <p class="framed" style="margin: 0px;text-align: justify;color: var(--bw4);width: 100%;height: 100%;background: url(&quot;../assets/img/projects/bikey/young-man-glasses-helmet-hurrying-work-he-is-riding-bicycle-down-street_274689-25341.jpg.avif&quot;) 72% 50% / cover;min-height: 300px;border-width: 0px;"><br> </p>
+                            </div>
+                        </div>
+                        <div class="row gsp-half" style="margin: 0;width: 100%;gap: 2rem;">
+                            <div class="col" style="padding: 0;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--blu-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">Goals</span>
+                                    <p class="gsp-halfhalf xp2 x75" style="margin: 0px;text-align: left;color: var(--bw6);">- To be able to travel even in heavy traffic<br>- To have more time for himself<br>- To find limits of his bike<br>- To succeed in things he do</p>
+                                </div>
+                            </div>
+                            <div class="col" style="padding: 0;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--org-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">Frustrations</span>
+                                    <p class="xp2 x75" style="margin: 0px;text-align: left;color: var(--bw6);">- He doesn’t like mishaps that derails him from his plan.<br>- He hates unpredictability<br>- He doesn’t like it when he cannot monitor things - he feels insecure.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--ylw-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">How Might We?</span>
+                            <p class="xp2 gsp-halfhalf x75" style="margin: 0px;text-align: left;color: var(--bw6);"><em>How might we help Boong make a successful trip to home every time?</em></p>
+                        </div>
+                    </div>
+                    <div class="framed gsp-singlehalf" style="padding: 2rem;background: #fefefe;">
+                        <div class="row d-flex flex-column-reverse flex-xl-row gsp-half" style="margin: 0;width: 100%;gap: 2rem;">
+                            <div class="col" style="padding: 0;">
+                                <p class="xh2 gsp-half" style="margin: 0px;margin-bottom: 0.5em;color: #545454;">Sarah</p>
+                                <p class="xp3 gsp-half x75" style="margin: 0px;margin-bottom: 0.5em;color: #545454;">Female, 32 yr.<br>Graduated Master's Degree, working as an accountant in Adelaide, Australia<br>Lives with family</p>
+                                <p class="xp2 light gsp-half quote bold" style="margin: 0px;text-align: left;color: #545454;">I use e-scooter to travel around my hometown. It’s affordable, and it’s basically free!</p>
+                                <p class="xp2 light" style="margin: 0px;text-align: justify;color: #545454;">Sarah is a nine-to-five worker in outer area of Adelaide, Australia. She travels with e-scooter a lot as it’s more efficient and cost-effective. Her vehicle has the smart BMS, but did not use them as much since it’s not useful enough. She has rigid plans, and always head home after work. She is very careful and strategic in what she has done.</p>
+                            </div>
+                            <div class="col-12 col-xl-4" style="padding: 0;">
+                                <p class="framed" style="margin: 0px;text-align: justify;color: var(--bw4);width: 100%;height: 100%;background: url(&quot;../assets/img/projects/bikey/young-beautiful-woman-electric-scooter-ecological-transport_1153-8967.jpg&quot;) 100% 50% / cover;min-height: 300px;border-width: 0px;"><br> </p>
+                            </div>
+                        </div>
+                        <div class="row gsp-half" style="margin: 0;width: 100%;gap: 2rem;">
+                            <div class="col" style="padding: 0;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--blu-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">Goals</span>
+                                    <p class="gsp-halfhalf xp2 x75" style="margin: 0px;text-align: left;color: var(--bw6);">- To earn and save money as much as possible<br>- To provide for family<br>- To optimise every steps in her life and ensure everything is going well</p>
+                                </div>
+                            </div>
+                            <div class="col" style="padding: 0;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--org-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">Frustrations</span>
+                                    <p class="xp2 x75" style="margin: 0px;text-align: left;color: var(--bw6);">- She hates waiting. It wastes her valuable time.<br>- She doesn’t like the idea of not having control in elements of her life<br>- She hates risky decisions.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="padding: 2rem;width: 100%;height: 100%;background: var(--ylw-2);border-width: 0px;"><span class="xh5 gsp-halfhalf" style="width: 100%;margin-bottom: 0.5em;color: var(--bw6);">How Might We?</span>
+                            <p class="xp2 gsp-halfhalf x75" style="margin: 0px;text-align: left;color: var(--bw6);"><em>How might we help Sarah make more efficient commute decisions?</em></p>
+                        </div>
+                    </div>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Empathy maps</p>
+                    <div class="framed gsp-single" style="padding: 2rem;background: #fefefe;">
+                        <div class="d-flex flex-row justify-content-center align-items-center gsp-half" style="gap: 2rem;"><img class="rounded-circle" src="../assets/img/projects/bikey/SS%20377.png" width="213" height="201" style="width: 4rem;height: 4rem;"><span class="xh3" style="width: 100%;color: #545454;text-align: left;">Boong</span></div>
+                        <div class="row" style="margin: -1rem;">
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--red-3);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--red-7);">Says</span><span class="xp2 light" style="text-align: left;color: var(--red-7);">- I travel almost 40 kms daily<br>- I used the BMS app to monitor data of my e-bike<br>- Traffic jams still affects the e-bike range as I have t brake and accelerate a lot<br>- I know how far I can go, so I plan everything in my head<br>- Sometimes I am stuck on the road and have to pedal my way home</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--ylw-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--ylw-7);">Thinks</span><span class="xp2 light" style="text-align: left;color: var(--ylw-7);">- I wish I know the exact range of this bike<br>- I want to know how fast I’m travelling<br>- I want to use this bike to its fullest</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--grn-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--grn-7);">Does</span><span class="xp2 light" style="text-align: left;color: var(--grn-7);">- Travels almost 40 kms daily<br>- Uses his e-bike to its limits<br>- Mental calculations on his commute range<br>- Find new routes to avoid traffic<br>- Monitor his bike stats when riding</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--blu-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--blu-7);">Feels</span><span class="xp2 light" style="text-align: left;color: var(--blu-7);">- Deeply frustrated when he’s stuck on a road<br>- Anxious when battery starts to run out<br>- Superior in using e-bikes<br>- Victorious when he made it home with additional detours<br>- Insecure when he can’t monitor things to make predictions<br>- Frustrated when things did not go well</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="framed gsp-singlehalf" style="padding: 2rem;background: #efefef;">
+                        <div class="d-flex flex-row justify-content-center align-items-center gsp-half" style="gap: 2rem;"><img class="rounded-circle" src="../assets/img/projects/bikey/SS%20376.jpg" width="213" height="201" style="width: 4rem;height: 4rem;"><span class="xh3" style="width: 100%;color: #545454;text-align: left;">Sarah</span></div>
+                        <div class="row" style="margin: -1rem;">
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--red-3);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--red-7);">Says</span><span class="xp2 light" style="text-align: left;color: var(--red-7);">- My office is very close<br>- I used the app for BMS only few times<br>- The app is not very helpful. I see no point in using it.<br>- E-scooter is very efficient way to travel<br>- I plan my rides, to avoid sticky situations<br>- I don’t like it when things are getting out of control</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--ylw-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--ylw-7);">Thinks</span><span class="xp2 light" style="text-align: left;color: var(--ylw-7);">- The BMS app is not useful<br>- Is there any way that I can save even more money?<br>- How can I do things better?<br>- I should be really careful in travelling with e-scooter</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--grn-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--grn-7);">Does</span><span class="xp2 light" style="text-align: left;color: var(--grn-7);">- Commutes by e-scooter to and from work<br>- Use the app to control the e-scooter functions if necessary<br>- Use typical solutions to control e-scooter power such as remotes and keys<br>- Plans the travel beforehand if she’s going somewhere new<br>- Abort the trip if she thinks she will not make it home</span></div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-lg-6" style="padding: 1rem;">
+                                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start framed" style="background: var(--blu-2);padding: 2rem;width: 100%;height: 100%;border-width: 0px;"><span class="xh4" style="width: 100%;margin-bottom: 0.5em;color: var(--blu-7);">Feels</span><span class="xp2 light" style="text-align: left;color: var(--blu-7);">- Pointless in using the app<br>- Confident in her pre-planning<br>- Curious in finding ways to optimise her financials and daily lives<br>- Insecure without plans<br>- Anxious with uncertainty</span></div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Summarising pain points</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">At this point, we now understand what users might need to go through in their journey. Let's do a rundown so we can clearly define the problems we need to address.</p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20381.webp"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20381.webp" loading="lazy">
+                        <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">Pain points - Click to view in fullscreen</p>
+                    </a>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);"><em>How Might We</em> solve the problem?</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">To understand these pain points, insights, and issues easier, these are digested into these "How Might We" statements<br><br>So, <strong><em>How Might We...</em></strong></p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20380.webp"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20380.webp" loading="lazy">
+                        <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">How Might We - Click to view in fullscreen</p>
+                    </a>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Affinity mapping</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">We have <em>truckloads </em>of insights already, but it's very cluttered. The affinity mapping will provide a bigger picture of these insights. In this project, it helped me identify the "big keywords" of a group of issues.</p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20382.png"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20382.png" loading="lazy">
+                        <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">Affinity mapping - Click to view in fullscreen</p>
+                    </a>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Organising information architecture (IA)</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Now, I'll use the card sorting method to better make sense of important informations that will be presented in the app. By listing out the information needed and group them it helps both us the designers and users to understand and create connections between elements better.</p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20383.png"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20383.png" loading="lazy">
+                        <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">Card sorting - Click to view in fullscreen</p>
+                    </a>
+                    <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">User flow and user journey</p>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">This is the typical user flow of a trip with e-bike/scooter. Notice how seemingly simple tasks are actually complex and full of tasks...</p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20385.jpg"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20385.jpg" loading="lazy">
+                        <p class="xp4 noul gsp-single" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">User flow - Click to view in fullscreen</p>
+                    </a>
+                    <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The detailed user journey can be seen below. Additionally, I have added the improvement opportunities where we can better help users commute to their destination more smoothly.<br><br><strong>Goal: Commute to destination</strong></p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20384.png"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20384.png" loading="lazy">
+                        <p class="xp4 noul gsp-single" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">User journey - Click to view in fullscreen</p>
+                    </a>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-3" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">03</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Designs</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;">
+                        <div class="col d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-double" style="padding: 0;">
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">App sitemap</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Now, I've took some time to come up with the app sitemap. This map will shows how navigating in-app will look like. You can see how the app is very linear and simple.</p><a class="noul gsp-single" href="../assets/img/projects/bikey/SS%20386.png"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20386.png" loading="lazy">
+                                <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">App sitemap - Click to view in fullscreen</p>
+                            </a>
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Wireframes</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Finally, we are seeing the app for the first time! It's nice to see abstract ideas starts to develop into reality, doesn't it? ;)</p><a class="noul" href="../assets/img/projects/bikey/Untitled%202%20P1.jpg"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/Untitled%202%20P1.jpg" loading="lazy">
+                                <p class="xp4 noul gsp-single" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">Design Wireframe (unwired interactions) - Click to view in fullscreen</p>
+                            </a>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Additionally, after gathering initial feedback, they can be similar concluded as follow:</p><a class="noul" href="../assets/img/projects/bikey/Untitled%202%20P1%202.jpg"><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/Untitled%202%20P1%202.jpg" loading="lazy">
+                                <p class="xp4 noul gsp-singlehalf" style="margin: 0px;text-align: center;color: var(--bw2);width: 100%;">Design Wireframe (with additional comments from testing) - Click to view in fullscreen</p>
+                                <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">A little UI sneak peek!</p>
+                                <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The UI design stage is being completed as you are reading this. Here is the exclusive sneak peek of the UI designs.</p><img class="img-fluid gsp-halfhalf framed" src="../assets/img/projects/bikey/SS%20387.png" loading="lazy">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
+                            <p id="mark-5" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">04</p>
+                            <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">What's next</p>
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0px;">
+                        <div class="col d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-sm-start justify-content-lg-center justify-content-xxl-center align-items-xxl-start ani1 gsp-double" style="padding: 0;">
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Hi-fi prototypes</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">The high fidelity prototypes will be designed, with interactions linked between frames to ensure seamless testing in next stage</p>
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Testing</p>
+                            <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Usability testing will be conducted to uncover additional insights regarding the design. Once finished, the design is ready to complete its first cycle by going into development and production.</p>
+                            <p class="xh3 gsp-single" style="margin: 0px;margin-bottom: 0.5em;color: var(--bw5);">Development</p>
+                            <p class="xp2 light" style="margin: 0px;text-align: justify;color: var(--bw4);">This is very challenging part for me. I have already enrolled courses in Coursera about Swift programming. I will try my best to learn the iOS development and develop this application on my own.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer style="padding-bottom: 2rem;width: 100%;">
+        <hr style="border-color: var(--bw1);margin-bottom: 1.5rem;">
+        <div class="row flex-column flex-md-row" style="margin: 0px;gap: 0.25rem;">
+            <div class="col d-flex flex-column" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;">
+                <p class="text-center text-md-start xp2 light" style="font-weight: 400;color: var(--bw4);margin-bottom: 0;">Made with passion by&nbsp;<span class="heavy" style="font-weight: 700;color: var(--bw6);">nuttapong</span></p>
+                <p class="text-center text-md-start xp3 light" id="greets" style="margin-bottom: 0;color: var(--bw2);">Have a great day! but please enable JavaScript :&lt;&nbsp;</p>
+            </div>
+            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;"><a class="xp3 light" href="mailto:nsrikamdee@gmail.com?subject=%5BHello%5D%20" style="font-weight: 400;margin-bottom: 0;color: var(--bw3);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+                    </svg>nsrikamdee@gmail.com</a><a class="xp3 light" href="tel:+66819079897" style="font-weight: 400;margin-bottom: 0.25rem;color: var(--bw3);margin-left: 1rem;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                    </svg>(+66) 81 907 9897</a></div>
+            <div class="col d-flex flex-column deskhide" style="padding: 0px;">
+                <p class="text-center text-md-start xp4 light bw2 gsp-half" style="margin-top: 0.5rem;color: var(--bw1);margin-bottom: 0;">Contents are now optimised for smaller screens. Try viewing on larger screens for even more details.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
+    <script src="../assets/js/greets.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/scroller.js"></script>
+    <script src="../assets/js/uwu.js"></script>
+</body>
+
+</html>
