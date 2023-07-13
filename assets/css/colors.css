@@ -146,6 +146,12 @@
   }
 }
 
+@media (prefers-color-scheme: light) {
+  .graphic-color-light {
+    filter: brightness(80%) saturate(000%) hue-rotate(180deg) invert(100%);
+  }
+}
+
 @media (prefers-color-scheme: dark) {
   .graphic-color {
     filter: brightness(50%) saturate(200%) hue-rotate(180deg) invert(100%);
