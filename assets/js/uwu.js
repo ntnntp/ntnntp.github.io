@@ -20,10 +20,6 @@ secretInput.focus();
     secretInput.value = "";
   };
 
-  if (secretInput.value == "hansa") {
-    window.open("https://nuttapongs.com/files/stashes/aGFuc2E%3D.JPG", '_blank');
-    secretInput.value = "";
-  };
 
   if (secretInput.value == "mumu" || secretInput.value == "nugget") {
     window.open("https://nuttapongs.com/files/stashes/mumu.JPG", '_blank');
@@ -35,10 +31,6 @@ secretInput.focus();
     secretInput.value = "";
   };
 
-  if (secretInput.value == "d43f-cl-rel") {
-    window.open("https://nuttapongs.com/files/stashes/ds2/eiei.pdf", '_blank');
-    secretInput.value = "";
-  };
 
   if (secretInput.value == "capybara") {
     window.open("https://www.youtube.com/watch?v=WbjyfvaH7Ko", '_blank');
