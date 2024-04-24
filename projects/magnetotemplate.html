@@ -1,9 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" style="background: var(--bw0);color: var(--bw0);height: 100vh;">
+<html data-bs-theme="light" lang="en" style="background: var(--bw0);color: var(--bw0);height: 100vh;">
 
 <head>
     <meta charset="utf-8">
 <meta name=”robots” content=”noindex”>
+<script type='text/javascript'>
+  window.smartlook||(function(d) {
+    var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+    var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+    c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', 'c30b7f6ff562242a7db547c5c9f0130a12ef2ee4', { region: 'eu' });
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Magnetolabs Website Design Template | nuttapong's portfolio</title>
     <meta name="twitter:card" content="summary">
@@ -14,7 +22,7 @@
     <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
     <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
     <link rel="icon" type="image/png" sizes="128x128" href="../assets/img/Favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Thai:400,700&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900&amp;display=swap">
     <link rel="stylesheet" href="../assets/css/MiRllRiM%20Script.css">
@@ -34,13 +42,14 @@
 
   gtag('config', 'G-QYQXETH453');
 </script>
+
 <!-- Although Nuttapong is studying in Communication Management and not fancy Computer Science or Engineering, he designed this website himself, no templates, nothing. With help of stackoverflow, css-tricks, and google, I learned a great deal of HTML and CSS (with some bits of JS also.) -->
 <!-- ถึงผมจะเรียนอยู่ในคณะนิเทศศาสตร์ และไม่ใช่คณะวิทยาศาสตร์หรือวิศวกรรม ผมก็สามารถออกแบบเว็บไซต์นี้เองโดยไม่ได้ใช้เทมเพลตใดๆ ด้วยความช่วยเหลือจาก stackoverflow, css-tricks และ google นี้เอง ผมได้มีโอกาสนำความรู้เกี่ยวกับ HTML มาปัดฝุ่นอีกครั้ง และเรียนรู้ CSS กับ JS เพิ่มในเวลาเดียวกัน -->
 </head>
 
 <body class="d-flex d-sm-flex flex-column align-items-center justify-content-sm-center align-items-xl-center cssbody cssnav" style="overflow-x: hidden;">
-    <div class="d-flex d-lg-none flex-column justify-content-end align-items-end" style="width: 100%;position: fixed;bottom: 0%;left: 0%;z-index: 99;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-mobnav" href="#collapse-mobnav" role="button" style="border-bottom-left-radius: 0;border-top-left-radius: 99px;border-top-right-radius: 99px;border-bottom-right-radius: 0;background: var(--red-3);padding-left: 1rem;padding-right: 1rem;border-style: none;padding-bottom: 1rem;padding-top: 1rem;margin-right: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-fill" style="width: 1rem;height: 1rem;margin-bottom: 3px;">
-                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2z"></path>
+    <div class="d-flex d-lg-none flex-column justify-content-end align-items-end" style="width: 100%;position: fixed;bottom: 0%; left: 0%; z-index: 99;"><a class="btn btn-primary" data-bs-toggle="collapse" aria-expanded="false" aria-controls="collapse-mobnav" href="#collapse-mobnav" role="button" style="border-bottom-left-radius: 0;border-top-left-radius: 99px;border-top-right-radius: 99px;border-bottom-right-radius: 0;background: var(--red-3);padding-left: 1rem;padding-right: 1rem;border-style: none;padding-bottom: 1rem;padding-top: 1rem;margin-right: 1rem;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-fill" style="width: 1rem;height: 1rem;margin-bottom: 3px;">
+                <path d="M2 2v13.5a.5.5 0 0 0 .74.439L8 13.069l5.26 2.87A.5.5 0 0 0 14 15.5V2a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2"></path>
             </svg></a>
         <div class="collapse" id="collapse-mobnav" style="z-index: 99;width: 100%;">
             <div class="d-flex flex-column" style="overflow: clip;background: var(--bw0);padding: 2rem;width: 100%;border-top-left-radius: 12px;border-top-right-radius: 12px;border-style: none;border-top: 1px solid var(--bw1);padding-bottom: 3rem;">
@@ -51,9 +60,9 @@
             </div>
         </div>
     </div>
-    <nav class="navbar navbar-light navbar-expand-md sticky-top d-flex justify-content-center" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;background: var(--bw0);width: 100%;border-style: none;border-bottom: 1px none #f4f4f4;">
+    <nav class="navbar navbar-expand-md sticky-top d-flex justify-content-center navbar-light" id="xnav" style="padding-top: 1.5rem;padding-bottom: 1.5rem;background: var(--bw0);width: 100%;border-style: none;border-bottom: 1px none #f4f4f4 ;">
         <div class="container-fluid"><a class="navbar-brand bsstrip logo" id="xlogo" href="https://nuttapongs.com" style="text-align: right;transition: color 400ms;margin-left: -0.8125rem!important;color: var(--bw6);">nuttapong</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1" style="border-width: 0px;padding: 0px;filter: invert(1%);margin-right: -0.8125rem!important;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-list" style="color: var(--bw6);width: 1.5rem;height: 1.5rem;">
-                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"></path>
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"></path>
                 </svg><span class="visually-hidden">Toggle navigation</span></button>
             <div class="collapse navbar-collapse d-md-flex justify-content-md-end" id="navcol-1" style="margin-left: -0.8125rem!important;">
                 <ul class="navbar-nav desknomar" style="color: rgb(143,199,255);padding-bottom: 1rem;margin-right: -0.8125rem;padding-top: 1rem;">
@@ -67,7 +76,7 @@
     </nav>
     <div class="container-fluid d-flex flex-column align-items-center align-items-md-start" style="margin: 0px;max-width: none;padding-left: 0;padding-right: 0;">
         <div class="d-flex d-xxl-flex flex-column justify-content-center align-items-start align-items-xxl-start csshero" style="background: linear-gradient(90deg, #968d2f 44%, rgba(255,255,255,0) 100%), url(&quot;../assets/img/projects/magnetotemplate/Screenshot%202566-01-28%20at%2013.13.52.png&quot;) right / cover no-repeat;background-size: auto, cover;">
-            <div class="row d-flex flex-column flex-md-row" style="width: 100%;margin: 0;gap: 2rem;">
+            <div class="row d-flex flex-column flex-md-row" style="width: 100%;margin: 0; gap: 2rem">
                 <div class="col d-flex flex-column justify-content-center align-items-start" style="padding: 0;">
                     <p class="xh3" style="margin: 0px;color: #ffffff;">Magnetolabs Website Design Template</p>
                     <p id="title" class="xh6 light" style="margin: 0px;color: #ffffff;">Magnetolabs</p>
@@ -116,7 +125,7 @@
                         <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
                             <p id="mark-2" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">02</p>
                             <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Diving in</p>
-                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1) ;">
                         </div>
                     </div>
                     <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
@@ -228,7 +237,7 @@
                         <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
                             <p id="mark-3" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">03</p>
                             <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Results</p>
-                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1) ;">
                         </div>
                     </div>
                     <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
@@ -243,9 +252,9 @@
                             <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Not only using atom methodologies will improve the cohesiveness of the design, but it will also enables easier customisation and flexibility when correctly implemented in Figma. In other words, future designers will be able to configure the templates easily by only changing some properties of the small elements such as colours, fonts, and styles.</p>
                             <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Implementation testing</p>
                             <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">After the template has been created, I then tried using the templates myself. I have created two virtual companies with different design and moods to see if the template is able to shorten the designing time while being flexible.&nbsp;</p><span class="xh4 gsp-half" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);">SECURE Insurance</span><img class="img-fluid framed gsp-half" src="../assets/img/projects/magnetotemplate/SS%2047.png"><span class="gsp-single xp3 regular" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);"><strong>Company keywords:&nbsp; </strong>trustworthy, clean, modern, medical<br><strong>CI colours:&nbsp; &nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-square-fill" style="margin-bottom: 2px;margin-right: 4px;color: rgb(0,163,255);">
-                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"></path>
                                 </svg>Deep Sky Blue<br><strong>Business sector:&nbsp;</strong> &nbsp;Insurance</span><span class="xh4 gsp-half" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);">SweetHouse Residences</span><img class="img-fluid framed gsp-half" src="../assets/img/projects/magnetotemplate/SS%2048.png"><span class="gsp-singlehalf xp3 regular" style="width: 100%;margin-bottom: 0.5em;color: var(--bw4);"><strong>Company keywords:&nbsp; &nbsp;</strong>peace, trustworthy, serene, modern, classy<br><strong>CI colours:&nbsp; &nbsp;</strong><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-square-fill" style="margin-bottom: 2px;margin-right: 4px;color: rgb(123,150,90);">
-                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2z"></path>
+                                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2z"></path>
                                 </svg>Natural Green <br><strong>Business sector:&nbsp;</strong> &nbsp;Residences &amp; real estate</span>
                             <p class="gsp-single xh3" style="margin: 0px;color: var(--bw5);">Reduced designing time</p>
                             <p class="xp2 light gsp-single" style="margin: 0px;text-align: justify;color: var(--bw4);">Usually, the designing process at Magnetolabs take roughly about 2-3 weeks for the first draft of all pages. When the framework template is implemented in the design process, it has significantly reduce the drafting time to only less than a week.<br><br>However, this certainly will not be one-edit-and-done thing. The design framework is meant to serve as a kickstarter for the design draft, and not meant to be a finished product.</p>
@@ -255,7 +264,7 @@
                         <div class="col d-flex align-items-center align-items-xxl-center gsp-double" style="border-color: #929292;display: none;padding: 0;">
                             <p id="mark-4" class="xh4 medium" style="margin-bottom: 0px;margin-right: 1rem;border-radius: 12px;color: var(--bw1);">04</p>
                             <p class="text-nowrap d-flex xh4 light" style="margin-bottom: 0px;margin-right: 1rem;margin-left: 0px;color: var(--bw2);">Reflections</p>
-                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1);">
+                            <hr style="width: 100%;opacity: 1;border-bottom: 1px solid var(--bw1) ;">
                         </div>
                     </div>
                     <div class="row" style="margin: 0px;margin-bottom: 0;overflow: hidden;display: inline;">
@@ -275,12 +284,12 @@
     <footer style="padding-bottom: 2rem;width: 100%;">
         <hr style="border-color: var(--bw1);margin-bottom: 1.5rem;">
         <div class="row flex-column flex-md-row" style="margin: 0px;gap: 0.25rem;">
-            <div class="col d-flex flex-column" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;">
+            <div class="col d-flex flex-column" style="padding: 0px;margin-bottom: 1rem; gap: 0.25rem">
                 <p class="text-center text-md-start xp2 light" style="font-weight: 400;color: var(--bw4);margin-bottom: 0;">Made with passion by&nbsp;<span class="heavy" style="font-weight: 700;color: var(--bw6);">nuttapong</span></p>
                 <p class="text-center text-md-start xp3 light" id="greets" style="margin-bottom: 0;color: var(--bw2);">Have a great day! but please enable JavaScript :&lt;&nbsp;</p>
             </div>
-            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;margin-bottom: 1rem;gap: 0.25rem;"><a class="xp3 light" href="mailto:nsrikamdee@gmail.com?subject=%5BHello%5D%20" style="font-weight: 400;margin-bottom: 0;color: var(--bw3);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
-                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
+            <div class="col-auto d-flex flex-row justify-content-center flex-md-column align-items-md-end" style="padding: 0px;margin-bottom: 1rem; gap: 0.25rem"><a class="xp3 light" href="mailto:nsrikamdee@gmail.com?subject=%5BHello%5D%20" style="font-weight: 400;margin-bottom: 0;color: var(--bw3);" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
+                        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"></path>
                     </svg>nsrikamdee@gmail.com</a><a class="xp3 light" href="tel:+66819079897" style="font-weight: 400;margin-bottom: 0.25rem;color: var(--bw3);margin-left: 1rem;" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone-fill" style="margin-right: 8px;margin-bottom: 3px;overflow: visible;">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
                     </svg>(+66) 81 907 9897</a></div>
@@ -289,8 +298,8 @@
             </div>
         </div>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.js"></script>
     <script src="../assets/js/greets.js"></script>
