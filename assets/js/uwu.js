@@ -61,6 +61,11 @@ secretInput.focus();
     window.open("https://www.youtube.com/watch?v=sFUmPSyG61c", '_blank');
     secretInput.value = "";
   };
+
+  if (secretInput.value == "20240717a") {
+    window.open("https://nuttapongs.com/publicnotepad/20240717a.html", '_blank');
+    secretInput.value = "";
+  };
     
 
 }
