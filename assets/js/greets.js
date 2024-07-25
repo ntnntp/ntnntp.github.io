@@ -9,12 +9,12 @@ var greetsMain = document.getElementById("greets-main");
 
 /*TIME*/
 if (hr >= 0 && hr < 1) {
-	greeter.innerHTML = "🥱 Time for some sleep now. Have a peaceful night!";
-	greetsMain.innerHTML = "Hello night owls";
+	greeter.innerHTML = "🥱 We needs 7 hours of sleep on average. You will be fully charged on " + (day.getHours()+7) + ":" + (day.getMinutes());
+	greetsMain.innerHTML = "Hello 🦉 midnight owls";
 }
 if (hr >= 1 && hr < 4) {
-	greeter.innerHTML = "😪 Looks like you'll need more sleep. Have a great night!";
-	greetsMain.innerHTML = "Hello night owls";
+	greeter.innerHTML = "😪 It's " + (day.getHours()) + ":" + (day.getMinutes()) + " and I care about you so much! Please snuggle up and get some sleep.";
+	greetsMain.innerHTML = "Hello 🦉 "+(day.getHours()) + "AM owls";
 }
 if (hr >= 4 && hr < 6) {
 	greeter.innerHTML = "🌄 Wow! you're up so early. Enjoy your morning!";
@@ -50,7 +50,7 @@ if (hr >= 19 && hr < 22) {
 }
 if (hr >= 22 && hr < 24) {
 	greeter.innerHTML = "✨ Time to recharge yourself. Have a peaceful night!";
-	greetsMain.innerHTML = "Hello night owls";
+	greetsMain.innerHTML = "Hello 🦉 night owls";
 }
 
 /*OCCASIONS*/

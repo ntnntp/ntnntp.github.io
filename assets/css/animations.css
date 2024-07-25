@@ -157,7 +157,7 @@
 code {
   padding-left: 1rem;
   border-left: solid 1px;
-  color: var(--bw6)!important;
+  /*color: var(--bw6)!important;*/
   border-left-color: var(--bw1);
 }
 
