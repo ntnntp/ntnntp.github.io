@@ -73,6 +73,7 @@
     --bw3: #aaaaaa;
     --bw2: #797979;
     --bw1: #424242;
+    --bw05: #222222;
     --bw0: #1a1a1a;
     --red-7: rgb(253, 242, 241);
     --red-6: rgb(240, 219, 219);
@@ -162,6 +163,7 @@
   :root {
     --transparent: rgba(0, 0, 0, 0);
     --bw0: #FFFFFF;
+    --bw05: #eeeeee;
     --bw1: #CCCBCB;
     --bw2: #9E9E9E;
     --bw3: #7D7D7D;

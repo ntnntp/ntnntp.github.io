@@ -658,6 +658,17 @@
 }
 
 .button-modal {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  color: var(--bw4);
+  border-radius: 99px;
+  width: 100%;
+  border: 1px solid var(--bw2);
+}
+
+.skilltag {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 3rem;
