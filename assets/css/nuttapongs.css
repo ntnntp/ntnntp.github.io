@@ -688,3 +688,15 @@ body {
   padding-left: 1rem;
 }
 
+@media (prefers-color-scheme: light) {
+  .dl-inverter {
+    filter: invert(100%);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .dl-inverter {
+    filter: invert(0%);
+  }
+}
+
