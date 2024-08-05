@@ -10,47 +10,47 @@ var greetsMain = document.getElementById("greets-main");
 /*TIME*/
 if (hr >= 0 && hr < 1) {
 	greeter.innerHTML = "🥱 We needs 7 hours of sleep on average. You will be fully charged on " + (day.getHours()+7) + ":" + (day.getMinutes());
-	greetsMain.innerHTML = "Hello 🦉 midnight owls";
+	greetsMain.innerHTML = "Hello 🦉 midnight owls!";
 }
 if (hr >= 1 && hr < 4) {
 	greeter.innerHTML = "😪 It's " + (day.getHours()) + ":" + (day.getMinutes()) + " and I care about you so much! Please snuggle up and get some sleep.";
-	greetsMain.innerHTML = "Hello 🦉 "+(day.getHours()) + "AM owls";
+	greetsMain.innerHTML = "Hello 🦉 "+(day.getHours()) + "AM owls!";
 }
 if (hr >= 4 && hr < 6) {
 	greeter.innerHTML = "🌄 Wow! you're up so early. Enjoy your morning!";
-	greetsMain.innerHTML = "Good morning";
+	greetsMain.innerHTML = "Good morning! 🌄";
 }
 if (hr >= 6 && hr < 9) {
 	greeter.innerHTML = "🥪 Fuel yourself with a good meal. Enjoy your morning!";
-	greetsMain.innerHTML = "Good morning";
+	greetsMain.innerHTML = "Good morning! 🌻";
 }
 if (hr >= 9 && hr < 12) {
 	greeter.innerHTML = "☕️ Don't forget to take a break. Enjoy your day!";
-	greetsMain.innerHTML = "Good morning";
+	greetsMain.innerHTML = "Good morning! 🌻";
 }
 if (hr >= 12 && hr < 13) {
 	greeter.innerHTML = "🍔 Time for another meal. Enjoy your lunch!";
-	greetsMain.innerHTML = "Good afternoon";
+	greetsMain.innerHTML = "Good afternoon! 🏙️";
 }
 if (hr >= 13 && hr < 16) {
 	greeter.innerHTML = "🌤️ Don't forget to take a break. Enjoy your afternoon!";
-	greetsMain.innerHTML = "Good afternoon";
+	greetsMain.innerHTML = "Good afternoon! 🏙️";
 }
 if (hr >= 16 && hr < 18) {
 	greeter.innerHTML = "🍃 How's your day so far.  Wish you a great evening!";
-	greetsMain.innerHTML = "Good evening";
+	greetsMain.innerHTML = "Good evening! 🌇";
 }
 if (hr >= 18 && hr < 19) {
 	greeter.innerHTML = "🏡 Have a safe trip back home. Also, enjoy your dinner!";
-	greetsMain.innerHTML = "Good evening";
+	greetsMain.innerHTML = "Good evening! 🌆";
 }
 if (hr >= 19 && hr < 22) {
 	greeter.innerHTML = "🌕 Time to reunite with yourself. Have a peaceful night!";
-	greetsMain.innerHTML = "Good evening";
+	greetsMain.innerHTML = "Good evening! 🌃";
 }
 if (hr >= 22 && hr < 24) {
 	greeter.innerHTML = "✨ Time to recharge yourself. Have a peaceful night!";
-	greetsMain.innerHTML = "Hello 🦉 night owls";
+	greetsMain.innerHTML = "Hello 🦉 night owls!";
 }
 
 /*OCCASIONS*/
@@ -59,10 +59,10 @@ if (month == 10 && ndate == 19) {
  }
 if (month == 11 && ndate == 25) {
 	greeter.innerHTML = "Merry christmas 🎄 and have a nice day!";
-	greetsMain.innerHTML = "🎄 Merry Christmas";
+	greetsMain.innerHTML = "Merry Christmas! 🎄";
   }  
 if (month == 0 && ndate <= 4) {
 	greeter.innerHTML = "Happy new year! 🎆 have a wonderful "+day.getFullYear()+"!";
-	greetsMain.innerHTML = "🎆 Happy new year";
+	greetsMain.innerHTML = "Happy new year! 🎆 ";
 }
 
