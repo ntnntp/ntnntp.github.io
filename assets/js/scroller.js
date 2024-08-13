@@ -1,4 +1,3 @@
-
 if (document.getElementById("topnav") == null) {
 	var offH = document.getElementById("xnav").offsetHeight;
 } else {
@@ -29,6 +28,7 @@ setInterval(() => {
 	};
 
   }, 1000);
+
 
 
 
@@ -153,3 +153,19 @@ $( "#topnav" ).hover(
     function() {$('#collapse-1').collapse("show");},
     function() {$('#collapse-1').collapse("hide");}
 );
+
+
+// URL Caller Function
+window.onload = function() {
+
+	$('#collapse-mobnav').collapse("hide");
+	const targetSection = window.location.hash.substring(1); // Remove the '#'
+  
+	if (targetSection === 'certificate') {
+		
+		window.scrollTo({
+			top: document.getElementById("mark-6").offsetTop*0.98,
+			behavior: "smooth"
+		   });
+	}
+};
