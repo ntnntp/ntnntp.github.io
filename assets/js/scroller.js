@@ -168,4 +168,29 @@ window.onload = function() {
 			behavior: "smooth"
 		   });
 	}
+
+	if (targetSection === 'skills') {
+		
+		window.scrollTo({
+			top: document.getElementById("mark-2").offsetTop*0.98,
+			behavior: "smooth"
+		   });
+	}
+
+	if (targetSection === 'education') {
+		
+		window.scrollTo({
+			top: document.getElementById("mark-7").offsetTop*0.98,
+			behavior: "smooth"
+		   });
+	}
+
+	if (targetSection === 'awards') {
+		
+		window.scrollTo({
+			top: document.getElementById("mark-5").offsetTop*0.98,
+			behavior: "smooth"
+		   });
+	}
+
 };
